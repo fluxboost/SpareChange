@@ -10,4 +10,9 @@
 
 @interface UIColor (SC)
 
++ (UIColor *)colorPrimary:(CGFloat)alpha;
++ (UIColor *)colorSecondary:(CGFloat)alpha;
++ (UIColor *)colorTextPrimary:(CGFloat)alpha;
++ (UIColor *)colorTextSecondary:(CGFloat)alpha;
+
 @end

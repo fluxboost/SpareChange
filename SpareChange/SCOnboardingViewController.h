@@ -12,8 +12,7 @@
 @interface SCOnboardingViewController : UIViewController <EAIntroDelegate>
 
 @property (strong, nonatomic) EAIntroView *intro;
-@property (weak, nonatomic) IBOutlet UIButton *buttonLogin;
-
-- (IBAction)buttonLoginPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *butonCreateAccount;
+- (IBAction)buttonCreateAccountPressed:(id)sender;
 
 @end

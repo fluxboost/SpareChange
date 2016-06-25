@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "NSUserDefaults+SC.h"
+#import "UIFont+SC.h"
+#import "UIColor+SC.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +21,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setupAppearance];
+    
+    for (NSString *familyName in [UIFont familyNames]){
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+            NSLog(@"%@", fontName);
+        }
+    }
+
     
     if ([NSUserDefaults isUserLoggedIn]) {
         [[self window] setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController]];
@@ -56,10 +65,10 @@
     //[[UINavigationBar appearance] setBackIndicatorImage:[backButtonIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
     //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[backButtonIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorPrimary:1.0f]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTranslucent:NO];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor], NSBackgroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont systemFontOfSize:16.0f]}];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor], NSBackgroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont fontSourceSansProLight:16.0f]}];
     //[[UINavigationBar appearance] setClipsToBounds:YES];
     
     // Hides back button text
@@ -67,7 +76,7 @@
                                                          forBarMetrics:UIBarMetricsDefault];
     
     [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
-    [[UITabBar appearance] setTintColor:[UIColor yellowColor]];
+    [[UITabBar appearance] setTintColor:[UIColor colorPrimary:1.0f]];
     [[UITabBar appearance] setTranslucent:NO];
     [[UITabBarItem appearance] setTitleTextAttributes: @{ NSFontAttributeName : [UIFont systemFontOfSize:9.0f]} forState:UIControlStateNormal];
 }

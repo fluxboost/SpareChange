@@ -8,7 +8,7 @@
 		<key>descText</key>
 		<string>Buy e-tickets to the events you love.</string>
 		<key>image</key>
-		<string>PDQ_Logo_Large</string>
+		<string>beach4.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
@@ -16,7 +16,7 @@
 		<key>descText</key>
 		<string>Find the best events happening in your area.</string>
 		<key>image</key>
-		<string>OnboardingTempScreenshot</string>
+		<string>beach2.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
@@ -24,7 +24,7 @@
 		<key>descText</key>
 		<string>Purchase your tickets within the app and receive your unique e-ticket.</string>
 		<key>image</key>
-		<string>OnboardingTempScreenshot</string>
+		<string>beach3.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
@@ -32,7 +32,7 @@
 		<key>descText</key>
 		<string>Arrive at the venue and get your QR code ticket scanned on the door.</string>
 		<key>image</key>
-		<string>OnboardingTempScreenshot</string>
+		<string>beach4.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
@@ -40,7 +40,7 @@
 		<key>descText</key>
 		<string>That&apos;s all there is to it, it just makes sense.</string>
 		<key>image</key>
-		<string>OnboardingTempScreenshot</string>
+		<string>beach2.jpg</string>
 	</dict>
 </array>
 </plist>

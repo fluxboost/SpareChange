@@ -9,6 +9,8 @@
 #import "SCOnboardingViewController.h"
 #import "NSUserDefaults+SC.h"
 #import "AppDelegate.h"
+#import "UIColor+SC.h"
+#import "UIFont+SC.h"
 
 @interface SCOnboardingViewController ()
 
@@ -18,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[[self butonCreateAccount] layer] setCornerRadius:[[self butonCreateAccount] frame].size.height/2];
+    [[[self butonCreateAccount] layer] setBorderWidth:1.0f];
+    [[[self butonCreateAccount] layer] setBorderColor:[UIColor whiteColor].CGColor];
     
     if (![NSUserDefaults isOnboardingCompleted]) {
         [self setupandShowIntro];
@@ -34,16 +40,16 @@
     for (NSDictionary *object in onboardingData) {
         EAIntroPage *page = [EAIntroPage page];
         page.title = [object objectForKey:@"titleText"];
-        page.titleFont = [UIFont systemFontOfSize:18.0f weight:UIFontWeightBold];
+        page.titleFont = [UIFont fontSourceSansProBold:24.0f];
         //page.titleFont = [UIFont pik_avenirNextBoldWithSize:18.0f];
-        page.titleColor = [UIColor darkGrayColor];
+        page.titleColor = [UIColor whiteColor];
         page.titlePositionY = 175.0f;
         page.desc = [object objectForKey:@"descText"];
-        page.descFont = [UIFont systemFontOfSize:14.0f weight:UIFontWeightLight];
-        page.descColor = [UIColor lightGrayColor];
+        page.descFont = [UIFont fontSourceSansProLight:18.0f];
+        page.descColor = [UIColor whiteColor];
         //page.descFont = [UIFont pik_avenirNextRegWithSize:14.0f];
         page.descPositionY = 175.0f;
-        page.bgColor = [UIColor orangeColor];
+        page.bgImage = [UIImage imageNamed:[object objectForKey:@"image"]];
         [pages addObject:page];
     }
     
@@ -51,12 +57,11 @@
     [[self intro] setDelegate:self];
     [[self intro] setSkipButton:[self skipButton]];
     [[self intro] setSkipButtonAlignment:EAViewAlignmentCenter];
+    [[self intro] setShowSkipButtonOnlyOnLastPage:YES];
     [[self intro] setPageControlY:100.0f];
-    
     [[self intro] setUseMotionEffects:YES];
     [[self intro] setSwipeToExit:NO];
     [[self intro] showInView:[self view] animateDuration:1.0];
-    //[self performSelector:@selector(shiftPageWithIndex:) withObject:[NSNumber numberWithInteger:0] afterDelay:3.0];
 }
 
 - (void)intro:(EAIntroView *)introView pageStartScrolling:(EAIntroPage *)page withIndex:(NSUInteger)pageIndex {
@@ -73,26 +78,25 @@
     } else {
         [NSUserDefaults setIsOnboardingComplete:YES];
     }
-    
 }
 
 - (UIButton *)skipButton {
     UIButton *skipButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [skipButton setFrame:CGRectMake(0, 0, [[self view] frame].size.width/2, 50)];
-    [skipButton setBackgroundColor:[UIColor redColor]];
+    [skipButton setFrame:CGRectMake(0, 0, [[self view] frame].size.width/1.5, 60)];
+    [skipButton setBackgroundColor:[UIColor colorPrimary:1.0f]];
     [skipButton setTitle:NSLocalizedString(@"Get Started", nil) forState:UIControlStateNormal];
     [[skipButton layer] setCornerRadius:5.0f];
-    [[skipButton layer] setBorderColor:[UIColor lightGrayColor].CGColor];
-    [[skipButton layer] setBorderWidth:2.0f];
     return skipButton;
 }
 
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
-- (IBAction)buttonLoginPressed:(id)sender {
+- (IBAction)buttonCreateAccountPressed:(id)sender {
     [NSUserDefaults setIsUserLoggedIn:YES];
     
     AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
     [[appDelegateTemp window] setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController]];
-
 }
 @end

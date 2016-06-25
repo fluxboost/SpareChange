@@ -10,6 +10,9 @@
 
 @interface UIFont (SC)
 
-
++ (UIFont *)fontSourceSansProExtraLight:(CGFloat)fontSize;
++ (UIFont *)fontSourceSansProLight:(CGFloat)fontSize;
++ (UIFont *)fontSourceSansProRegular:(CGFloat)fontSize;
++ (UIFont *)fontSourceSansProBold:(CGFloat)fontSize;
 
 @end

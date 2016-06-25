@@ -14,7 +14,6 @@
 		6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393B41D1DE0230048F815 /* LaunchScreen.storyboard */; };
 		6CEF1E121D1E81DF00C96031 /* SCOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E111D1E81DF00C96031 /* SCOnboardingViewController.m */; };
 		6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E131D1E836200C96031 /* OnboardingData.plist */; };
-		6CEF1E171D1E862B00C96031 /* SCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E161D1E862B00C96031 /* SCSearchViewController.m */; };
 		6CEF1E191D1E879E00C96031 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E181D1E879E00C96031 /* Onboarding.storyboard */; };
 		6CEF1E1D1D1E887100C96031 /* NSUserDefaults+SC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E1C1D1E887100C96031 /* NSUserDefaults+SC.m */; };
 		6CEF1E201D1E88BC00C96031 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E1F1D1E88BC00C96031 /* Constants.m */; };
@@ -23,6 +22,26 @@
 		6CEF1E291D1E9EBF00C96031 /* UIFont+SC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E281D1E9EBF00C96031 /* UIFont+SC.m */; };
 		6CEF1E2C1D1E9ECC00C96031 /* UIColor+SC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E2B1D1E9ECC00C96031 /* UIColor+SC.m */; };
 		6CEF1E2F1D1EA27C00C96031 /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E2E1D1EA27C00C96031 /* SCTabBarController.m */; };
+		6CEF1E331D1EAD0F00C96031 /* SCAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E321D1EAD0F00C96031 /* SCAccountTableViewCell.m */; };
+		6CEF1E361D1EB5D200C96031 /* SCDonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E351D1EB5D200C96031 /* SCDonateViewController.m */; };
+		6CEF1E3A1D1EDD3C00C96031 /* beach2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E371D1EDD3C00C96031 /* beach2.jpg */; };
+		6CEF1E3B1D1EDD3C00C96031 /* beach3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E381D1EDD3C00C96031 /* beach3.jpg */; };
+		6CEF1E3C1D1EDD3C00C96031 /* beach4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E391D1EDD3C00C96031 /* beach4.jpg */; };
+		6CEF1E4A1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E3E1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf */; };
+		6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E3F1D1EEC6900C96031 /* SourceSansPro-Bold.otf */; };
+		6CEF1E4C1D1EEC6900C96031 /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E401D1EEC6900C96031 /* SourceSansPro-BlackIt.otf */; };
+		6CEF1E4D1D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E411D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf */; };
+		6CEF1E4E1D1EEC6900C96031 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E421D1EEC6900C96031 /* SourceSansPro-Black.otf */; };
+		6CEF1E4F1D1EEC6900C96031 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E431D1EEC6900C96031 /* SourceSansPro-It.otf */; };
+		6CEF1E501D1EEC6900C96031 /* SourceSansPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E441D1EEC6900C96031 /* SourceSansPro-BoldIt.otf */; };
+		6CEF1E511D1EEC6900C96031 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E451D1EEC6900C96031 /* SourceSansPro-Light.otf */; };
+		6CEF1E521D1EEC6900C96031 /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E461D1EEC6900C96031 /* SourceSansPro-LightIt.otf */; };
+		6CEF1E531D1EEC6900C96031 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E471D1EEC6900C96031 /* SourceSansPro-Regular.otf */; };
+		6CEF1E541D1EEC6900C96031 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E481D1EEC6900C96031 /* SourceSansPro-Semibold.otf */; };
+		6CEF1E551D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E491D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf */; };
+		6CEF1E581D1EEDD600C96031 /* UINavigationController+Ibiza.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E571D1EEDD600C96031 /* UINavigationController+Ibiza.m */; };
+		6CEF1E5C1D1EF50100C96031 /* SCInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E5B1D1EF50100C96031 /* SCInfoViewController.m */; };
+		6CEF1E5F1D1EF79F00C96031 /* SCBookmarksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E5E1D1EF79F00C96031 /* SCBookmarksTableViewController.m */; };
 		D9D8D43AB0DDB0659876C2FA /* libPods-SpareChange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C1C329AF18250E567C23E5 /* libPods-SpareChange.a */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +58,6 @@
 		6CEF1E101D1E81DF00C96031 /* SCOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCOnboardingViewController.h; sourceTree = "<group>"; };
 		6CEF1E111D1E81DF00C96031 /* SCOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCOnboardingViewController.m; sourceTree = "<group>"; };
 		6CEF1E131D1E836200C96031 /* OnboardingData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OnboardingData.plist; sourceTree = "<group>"; };
-		6CEF1E151D1E862B00C96031 /* SCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSearchViewController.h; sourceTree = "<group>"; };
-		6CEF1E161D1E862B00C96031 /* SCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSearchViewController.m; sourceTree = "<group>"; };
 		6CEF1E181D1E879E00C96031 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		6CEF1E1B1D1E887100C96031 /* NSUserDefaults+SC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SC.h"; sourceTree = "<group>"; };
 		6CEF1E1C1D1E887100C96031 /* NSUserDefaults+SC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SC.m"; sourceTree = "<group>"; };
@@ -56,6 +73,31 @@
 		6CEF1E2B1D1E9ECC00C96031 /* UIColor+SC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SC.m"; sourceTree = "<group>"; };
 		6CEF1E2D1D1EA27C00C96031 /* SCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
 		6CEF1E2E1D1EA27C00C96031 /* SCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
+		6CEF1E311D1EAD0F00C96031 /* SCAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAccountTableViewCell.h; sourceTree = "<group>"; };
+		6CEF1E321D1EAD0F00C96031 /* SCAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAccountTableViewCell.m; sourceTree = "<group>"; };
+		6CEF1E341D1EB5D200C96031 /* SCDonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDonateViewController.h; sourceTree = "<group>"; };
+		6CEF1E351D1EB5D200C96031 /* SCDonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDonateViewController.m; sourceTree = "<group>"; };
+		6CEF1E371D1EDD3C00C96031 /* beach2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach2.jpg; sourceTree = "<group>"; };
+		6CEF1E381D1EDD3C00C96031 /* beach3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach3.jpg; sourceTree = "<group>"; };
+		6CEF1E391D1EDD3C00C96031 /* beach4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach4.jpg; sourceTree = "<group>"; };
+		6CEF1E3E1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
+		6CEF1E3F1D1EEC6900C96031 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		6CEF1E401D1EEC6900C96031 /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
+		6CEF1E411D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		6CEF1E421D1EEC6900C96031 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
+		6CEF1E431D1EEC6900C96031 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
+		6CEF1E441D1EEC6900C96031 /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; };
+		6CEF1E451D1EEC6900C96031 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.otf"; sourceTree = "<group>"; };
+		6CEF1E461D1EEC6900C96031 /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightIt.otf"; sourceTree = "<group>"; };
+		6CEF1E471D1EEC6900C96031 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		6CEF1E481D1EEC6900C96031 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		6CEF1E491D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		6CEF1E561D1EEDD600C96031 /* UINavigationController+Ibiza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Ibiza.h"; sourceTree = "<group>"; };
+		6CEF1E571D1EEDD600C96031 /* UINavigationController+Ibiza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Ibiza.m"; sourceTree = "<group>"; };
+		6CEF1E5A1D1EF50100C96031 /* SCInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInfoViewController.h; sourceTree = "<group>"; };
+		6CEF1E5B1D1EF50100C96031 /* SCInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfoViewController.m; sourceTree = "<group>"; };
+		6CEF1E5D1D1EF79F00C96031 /* SCBookmarksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBookmarksTableViewController.h; sourceTree = "<group>"; };
+		6CEF1E5E1D1EF79F00C96031 /* SCBookmarksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBookmarksTableViewController.m; sourceTree = "<group>"; };
 		747DB263111CA19C3A694D00 /* Pods-SpareChange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareChange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpareChange/Pods-SpareChange.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C1C329AF18250E567C23E5 /* libPods-SpareChange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpareChange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,12 +171,16 @@
 			children = (
 				6CEF1E101D1E81DF00C96031 /* SCOnboardingViewController.h */,
 				6CEF1E111D1E81DF00C96031 /* SCOnboardingViewController.m */,
-				6CEF1E151D1E862B00C96031 /* SCSearchViewController.h */,
-				6CEF1E161D1E862B00C96031 /* SCSearchViewController.m */,
 				6CEF1E211D1E8B5B00C96031 /* SCLoginViewController.h */,
 				6CEF1E221D1E8B5B00C96031 /* SCLoginViewController.m */,
 				6CEF1E241D1E91B200C96031 /* SCAccountTableViewController.h */,
 				6CEF1E251D1E91B200C96031 /* SCAccountTableViewController.m */,
+				6CEF1E341D1EB5D200C96031 /* SCDonateViewController.h */,
+				6CEF1E351D1EB5D200C96031 /* SCDonateViewController.m */,
+				6CEF1E5A1D1EF50100C96031 /* SCInfoViewController.h */,
+				6CEF1E5B1D1EF50100C96031 /* SCInfoViewController.m */,
+				6CEF1E5D1D1EF79F00C96031 /* SCBookmarksTableViewController.h */,
+				6CEF1E5E1D1EF79F00C96031 /* SCBookmarksTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -149,6 +195,7 @@
 		6CB393C01D1DE0540048F815 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				6CEF1E301D1EACF700C96031 /* Cells */,
 				6CEF1E1E1D1E88BC00C96031 /* Constants.h */,
 				6CEF1E1F1D1E88BC00C96031 /* Constants.m */,
 				6CEF1E2D1D1EA27C00C96031 /* SCTabBarController.h */,
@@ -170,6 +217,10 @@
 		6CB393C21D1DE0690048F815 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6CEF1E3D1D1EEC4C00C96031 /* Fonts */,
+				6CEF1E371D1EDD3C00C96031 /* beach2.jpg */,
+				6CEF1E381D1EDD3C00C96031 /* beach3.jpg */,
+				6CEF1E391D1EDD3C00C96031 /* beach4.jpg */,
 				6CB393B21D1DE0230048F815 /* Assets.xcassets */,
 			);
 			name = Assets;
@@ -178,6 +229,8 @@
 		6CEF1E1A1D1E885600C96031 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				6CEF1E561D1EEDD600C96031 /* UINavigationController+Ibiza.h */,
+				6CEF1E571D1EEDD600C96031 /* UINavigationController+Ibiza.m */,
 				6CEF1E271D1E9EBF00C96031 /* UIFont+SC.h */,
 				6CEF1E281D1E9EBF00C96031 /* UIFont+SC.m */,
 				6CEF1E2A1D1E9ECB00C96031 /* UIColor+SC.h */,
@@ -186,6 +239,34 @@
 				6CEF1E1C1D1E887100C96031 /* NSUserDefaults+SC.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		6CEF1E301D1EACF700C96031 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF1E311D1EAD0F00C96031 /* SCAccountTableViewCell.h */,
+				6CEF1E321D1EAD0F00C96031 /* SCAccountTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		6CEF1E3D1D1EEC4C00C96031 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF1E3E1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf */,
+				6CEF1E3F1D1EEC6900C96031 /* SourceSansPro-Bold.otf */,
+				6CEF1E401D1EEC6900C96031 /* SourceSansPro-BlackIt.otf */,
+				6CEF1E411D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf */,
+				6CEF1E421D1EEC6900C96031 /* SourceSansPro-Black.otf */,
+				6CEF1E431D1EEC6900C96031 /* SourceSansPro-It.otf */,
+				6CEF1E441D1EEC6900C96031 /* SourceSansPro-BoldIt.otf */,
+				6CEF1E451D1EEC6900C96031 /* SourceSansPro-Light.otf */,
+				6CEF1E461D1EEC6900C96031 /* SourceSansPro-LightIt.otf */,
+				6CEF1E471D1EEC6900C96031 /* SourceSansPro-Regular.otf */,
+				6CEF1E481D1EEC6900C96031 /* SourceSansPro-Semibold.otf */,
+				6CEF1E491D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		E9209365BC5AB266AC872875 /* Frameworks */ = {
@@ -265,11 +346,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CEF1E3C1D1EDD3C00C96031 /* beach4.jpg in Resources */,
+				6CEF1E3B1D1EDD3C00C96031 /* beach3.jpg in Resources */,
+				6CEF1E531D1EEC6900C96031 /* SourceSansPro-Regular.otf in Resources */,
+				6CEF1E4F1D1EEC6900C96031 /* SourceSansPro-It.otf in Resources */,
+				6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */,
+				6CEF1E4A1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf in Resources */,
 				6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */,
+				6CEF1E521D1EEC6900C96031 /* SourceSansPro-LightIt.otf in Resources */,
 				6CEF1E191D1E879E00C96031 /* Onboarding.storyboard in Resources */,
+				6CEF1E4E1D1EEC6900C96031 /* SourceSansPro-Black.otf in Resources */,
+				6CEF1E4D1D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf in Resources */,
 				6CB393B31D1DE0230048F815 /* Assets.xcassets in Resources */,
+				6CEF1E511D1EEC6900C96031 /* SourceSansPro-Light.otf in Resources */,
 				6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */,
+				6CEF1E501D1EEC6900C96031 /* SourceSansPro-BoldIt.otf in Resources */,
+				6CEF1E3A1D1EDD3C00C96031 /* beach2.jpg in Resources */,
 				6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */,
+				6CEF1E541D1EEC6900C96031 /* SourceSansPro-Semibold.otf in Resources */,
+				6CEF1E4C1D1EEC6900C96031 /* SourceSansPro-BlackIt.otf in Resources */,
+				6CEF1E551D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,13 +428,17 @@
 				6CEF1E2C1D1E9ECC00C96031 /* UIColor+SC.m in Sources */,
 				6CEF1E2F1D1EA27C00C96031 /* SCTabBarController.m in Sources */,
 				6CEF1E121D1E81DF00C96031 /* SCOnboardingViewController.m in Sources */,
+				6CEF1E5C1D1EF50100C96031 /* SCInfoViewController.m in Sources */,
 				6CB393AB1D1DE0230048F815 /* AppDelegate.m in Sources */,
 				6CEF1E261D1E91B200C96031 /* SCAccountTableViewController.m in Sources */,
-				6CEF1E171D1E862B00C96031 /* SCSearchViewController.m in Sources */,
+				6CEF1E581D1EEDD600C96031 /* UINavigationController+Ibiza.m in Sources */,
 				6CEF1E231D1E8B5B00C96031 /* SCLoginViewController.m in Sources */,
 				6CB393A81D1DE0230048F815 /* main.m in Sources */,
+				6CEF1E331D1EAD0F00C96031 /* SCAccountTableViewCell.m in Sources */,
 				6CEF1E201D1E88BC00C96031 /* Constants.m in Sources */,
 				6CEF1E291D1E9EBF00C96031 /* UIFont+SC.m in Sources */,
+				6CEF1E5F1D1EF79F00C96031 /* SCBookmarksTableViewController.m in Sources */,
+				6CEF1E361D1EB5D200C96031 /* SCDonateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
