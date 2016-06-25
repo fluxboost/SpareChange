@@ -91,11 +91,14 @@
     } else if ([indexPath row] == 2) {
         [self buttonLogoutPressed];
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 - (void)buttonResetOnboardingPressed {
     NSLog(@"Onboarding Reset");
     [NSUserDefaults setIsOnboardingComplete:NO];
+    [NSUserDefaults setHasWelcomeMessageDisplayed:NO];
 }
 
 - (void)buttonLogoutPressed {

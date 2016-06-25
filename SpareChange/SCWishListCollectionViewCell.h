@@ -11,6 +11,7 @@
 @interface SCWishListCollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
+@property (strong, nonatomic) IBOutlet UILabel *labelPrice;
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewWishListImage;
 
 @end

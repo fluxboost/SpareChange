@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CA0A94D1D1F45C400013CFE /* SCDonatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */; };
 		6CB393A81D1DE0230048F815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393A71D1DE0230048F815 /* main.m */; };
 		6CB393AB1D1DE0230048F815 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393AA1D1DE0230048F815 /* AppDelegate.m */; };
 		6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393AF1D1DE0230048F815 /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		41636D71B02BFF93A63A448A /* Pods-SpareChange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareChange.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpareChange/Pods-SpareChange.release.xcconfig"; sourceTree = "<group>"; };
+		6CA0A94B1D1F45C400013CFE /* SCDonatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDonatedViewController.h; sourceTree = "<group>"; };
+		6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDonatedViewController.m; sourceTree = "<group>"; };
 		6CB393A31D1DE0230048F815 /* SpareChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpareChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB393A71D1DE0230048F815 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CB393A91D1DE0230048F815 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				6CEF1E5E1D1EF79F00C96031 /* SCBookmarksTableViewController.m */,
 				6CDDBEFE1D1F34EF00BB7D6F /* SCInfoTableViewController.h */,
 				6CDDBEFF1D1F34EF00BB7D6F /* SCInfoTableViewController.m */,
+				6CA0A94B1D1F45C400013CFE /* SCDonatedViewController.h */,
+				6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				6CDDBF001D1F34EF00BB7D6F /* SCInfoTableViewController.m in Sources */,
 				6CB393AB1D1DE0230048F815 /* AppDelegate.m in Sources */,
 				6CEF1E261D1E91B200C96031 /* SCAccountTableViewController.m in Sources */,
+				6CA0A94D1D1F45C400013CFE /* SCDonatedViewController.m in Sources */,
 				6CEF1E581D1EEDD600C96031 /* UINavigationController+Ibiza.m in Sources */,
 				6CEF1E231D1E8B5B00C96031 /* SCLoginViewController.m in Sources */,
 				6CB393A81D1DE0230048F815 /* main.m in Sources */,

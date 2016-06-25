@@ -51,8 +51,16 @@
     if (!bookmarks) {
         bookmarks = [NSMutableArray array];
     }
-    
     [bookmarks addObject:person];
+    
+    NSMutableArray *archiveArray = [NSMutableArray arrayWithCapacity:[bookmarks count]];
+    
+    for (NSDictionary *personObject in bookmarks) {
+        NSData *personEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:personObject];
+        [archiveArray addObject:personEncodedObject];
+    }
+    
+    
     [userDefaults setObject:[bookmarks copy] forKey:scBookmarks];
     [userDefaults synchronize];
 }
@@ -73,6 +81,9 @@
 
 + (NSArray *)bookmarks {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    
+    
     return [userDefaults objectForKey:scBookmarks];
 }
 

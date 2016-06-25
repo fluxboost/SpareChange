@@ -27,12 +27,12 @@
     factory = [NIKFontAwesomeIconFactory barButtonItemIconFactory];
     [factory setColors:@[[UIColor colorPrimary:1.0f]]];
     wishListItems = [[self person] valueForKeyPath:@"wishList.items"];
-    [[self labelUsername] setText:[[self person] valueForKey:@"name"]];
+    [[self labelUsername] setText:[[self person] valueForKey:@"handle"]];
     [[self navigationController] setNavigationBarHidden:NO];
     [[self navigationController] setClear:NO];
     [[self collectionView] setContentInset:UIEdgeInsetsMake(-20, 0, 0, 0)];
     [[self tableView] setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    [[self labelDescription] setText:[[[self labelDescription] text] stringByReplacingOccurrencesOfString:@"{username}" withString:[[self person] valueForKey:@"name"]]];
+    [[self labelDescription] setText:[[[self labelDescription] text] stringByReplacingOccurrencesOfString:@"{username}" withString:[[self person] valueForKey:@"handle"]]];
     [self setupNavigationBar];
 }
 
@@ -61,6 +61,8 @@
     NSDictionary *wishListItem = [wishListItems objectAtIndex:[indexPath row]];
     
     [[cell labelTitle] setText:[wishListItem valueForKey:@"name"]];
+    CGFloat price = [[wishListItem valueForKey:@"price"] floatValue];
+    [[cell labelPrice] setText:[NSString stringWithFormat:@"£%.2f", price]];
     
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", [wishListItem valueForKey:@"name"]]];
     
