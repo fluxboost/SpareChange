@@ -10,4 +10,6 @@
 
 @interface SCBookmarksTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSArray *people;
+
 @end

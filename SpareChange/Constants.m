@@ -11,6 +11,8 @@
 @implementation Constants
 
 NSString *const scIsOnboardingCompleted = @"com.SpareChange.SpareChange.isOnboardingCompleted";
+NSString *const scWelcomeMessageDisplayed = @"com.SpareChange.SpareChange.isWelcomeMessageDisplayed";
 NSString *const scIsUserLoggedIn = @"com.SpareChange.SpareChange.isUserLoggedIn";
+NSString *const scBookmarks = @"com.SpareChange.SpareChange.bookmarks";
 
 @end

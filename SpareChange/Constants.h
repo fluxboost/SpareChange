@@ -12,5 +12,7 @@
 
 extern NSString *const scIsOnboardingCompleted;
 extern NSString *const scIsUserLoggedIn;
+extern NSString *const scBookmarks;
+extern NSString *const scWelcomeMessageDisplayed;
 
 @end

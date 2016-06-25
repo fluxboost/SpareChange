@@ -1,5 +1,5 @@
 //
-//  SCInfoViewController.h
+//  SCInfoTableViewController.h
 //  SpareChange
 //
 //  Created by Harry Liddell on 25/06/2016.
@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCInfoViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SCInfoTableViewController : UITableViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (strong, nonatomic) NSDictionary *person;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UILabel *labelUsername;
+@property (weak, nonatomic) IBOutlet UILabel *labelDescription;
 
 @end

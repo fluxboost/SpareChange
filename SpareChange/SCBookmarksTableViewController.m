@@ -11,11 +11,13 @@
 #import "UIFont+SC.h"
 #import "UIColor+SC.h"
 #import "UINavigationController+Ibiza.h"
+#import "NSUserDefaults+SC.h"
 
 @implementation SCBookmarksTableViewController
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    [self setPeople:[NSUserDefaults bookmarks]];
     [[self navigationController] setClear:YES];
     [self setupTableViewHeader];
     [[self tableView] setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
@@ -39,6 +41,29 @@
     [underline setBackgroundColor:[UIColor lightGrayColor]];
     [headerView addSubview:underline];
     [[self tableView] setTableHeaderView:headerView];
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"bookmarkCell" forIndexPath:indexPath];
+    
+    if(!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"bookmarkCell"];
+    }
+    
+    [[cell textLabel] setFont:[UIFont fontSourceSansProLight:18.0f]];
+    [[cell textLabel] setTextColor:[UIColor darkGrayColor]];
+    
+    [[cell textLabel] setText:[[[self people] objectAtIndex:[indexPath row]] valueForKey:@"handle"]];
+    
+    return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[self people] count];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
 @end

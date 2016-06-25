@@ -21,13 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setupAppearance];
-    
-    for (NSString *familyName in [UIFont familyNames]){
-        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
-            NSLog(@"%@", fontName);
-        }
-    }
-
+    [NSUserDefaults setHasWelcomeMessageDisplayed:YES];
     
     if ([NSUserDefaults isUserLoggedIn]) {
         [[self window] setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController]];
@@ -65,8 +59,8 @@
     //[[UINavigationBar appearance] setBackIndicatorImage:[backButtonIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
     //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[backButtonIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorPrimary:1.0f]];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorPrimary:1.0f]];
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor], NSBackgroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont fontSourceSansProLight:16.0f]}];
     //[[UINavigationBar appearance] setClipsToBounds:YES];

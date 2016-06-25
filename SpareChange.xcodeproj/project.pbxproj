@@ -12,6 +12,21 @@
 		6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393AF1D1DE0230048F815 /* Main.storyboard */; };
 		6CB393B31D1DE0230048F815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393B21D1DE0230048F815 /* Assets.xcassets */; };
 		6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393B41D1DE0230048F815 /* LaunchScreen.storyboard */; };
+		6CDDBEDF1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDBEDE1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m */; };
+		6CDDBEE21D1F1F3800BB7D6F /* SpareChangeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */; };
+		6CDDBEF11D1F2B1200BB7D6F /* Deodorant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE41D1F2B1200BB7D6F /* Deodorant.jpg */; };
+		6CDDBEF21D1F2B1200BB7D6F /* Razor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE51D1F2B1200BB7D6F /* Razor.jpg */; };
+		6CDDBEF31D1F2B1200BB7D6F /* Sanitary Pad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE61D1F2B1200BB7D6F /* Sanitary Pad.jpg */; };
+		6CDDBEF41D1F2B1200BB7D6F /* Shampoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE71D1F2B1200BB7D6F /* Shampoo.jpg */; };
+		6CDDBEF51D1F2B1200BB7D6F /* Shaving Foam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE81D1F2B1200BB7D6F /* Shaving Foam.jpg */; };
+		6CDDBEF61D1F2B1200BB7D6F /* Soap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE91D1F2B1200BB7D6F /* Soap.png */; };
+		6CDDBEF71D1F2B1200BB7D6F /* Socks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEA1D1F2B1200BB7D6F /* Socks.jpg */; };
+		6CDDBEF81D1F2B1200BB7D6F /* Toothbrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEB1D1F2B1200BB7D6F /* Toothbrush.jpg */; };
+		6CDDBEFA1D1F2B1200BB7D6F /* Toothpaste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEED1D1F2B1200BB7D6F /* Toothpaste.jpg */; };
+		6CDDBEFB1D1F2B1200BB7D6F /* Underwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEE1D1F2B1200BB7D6F /* Underwear.jpg */; };
+		6CDDBEFC1D1F2B1200BB7D6F /* underwear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEF1D1F2B1200BB7D6F /* underwear2.png */; };
+		6CDDBEFD1D1F2B1200BB7D6F /* underwear3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEF01D1F2B1200BB7D6F /* underwear3.jpg */; };
+		6CDDBF001D1F34EF00BB7D6F /* SCInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDBEFF1D1F34EF00BB7D6F /* SCInfoTableViewController.m */; };
 		6CEF1E121D1E81DF00C96031 /* SCOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E111D1E81DF00C96031 /* SCOnboardingViewController.m */; };
 		6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E131D1E836200C96031 /* OnboardingData.plist */; };
 		6CEF1E191D1E879E00C96031 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E181D1E879E00C96031 /* Onboarding.storyboard */; };
@@ -55,6 +70,24 @@
 		6CB393B21D1DE0230048F815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB393B51D1DE0230048F815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CB393B71D1DE0230048F815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CDDBEDD1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWishListCollectionViewCell.h; sourceTree = "<group>"; };
+		6CDDBEDE1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWishListCollectionViewCell.m; sourceTree = "<group>"; };
+		6CDDBEE01D1F1F3700BB7D6F /* SpareChange-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpareChange-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpareChangeAPI.swift; sourceTree = "<group>"; };
+		6CDDBEE41D1F2B1200BB7D6F /* Deodorant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Deodorant.jpg; sourceTree = "<group>"; };
+		6CDDBEE51D1F2B1200BB7D6F /* Razor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Razor.jpg; sourceTree = "<group>"; };
+		6CDDBEE61D1F2B1200BB7D6F /* Sanitary Pad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sanitary Pad.jpg"; sourceTree = "<group>"; };
+		6CDDBEE71D1F2B1200BB7D6F /* Shampoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shampoo.jpg; sourceTree = "<group>"; };
+		6CDDBEE81D1F2B1200BB7D6F /* Shaving Foam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shaving Foam.jpg"; sourceTree = "<group>"; };
+		6CDDBEE91D1F2B1200BB7D6F /* Soap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soap.png; sourceTree = "<group>"; };
+		6CDDBEEA1D1F2B1200BB7D6F /* Socks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Socks.jpg; sourceTree = "<group>"; };
+		6CDDBEEB1D1F2B1200BB7D6F /* Toothbrush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toothbrush.jpg; sourceTree = "<group>"; };
+		6CDDBEED1D1F2B1200BB7D6F /* Toothpaste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toothpaste.jpg; sourceTree = "<group>"; };
+		6CDDBEEE1D1F2B1200BB7D6F /* Underwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Underwear.jpg; sourceTree = "<group>"; };
+		6CDDBEEF1D1F2B1200BB7D6F /* underwear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underwear2.png; sourceTree = "<group>"; };
+		6CDDBEF01D1F2B1200BB7D6F /* underwear3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = underwear3.jpg; sourceTree = "<group>"; };
+		6CDDBEFE1D1F34EF00BB7D6F /* SCInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInfoTableViewController.h; sourceTree = "<group>"; };
+		6CDDBEFF1D1F34EF00BB7D6F /* SCInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfoTableViewController.m; sourceTree = "<group>"; };
 		6CEF1E101D1E81DF00C96031 /* SCOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCOnboardingViewController.h; sourceTree = "<group>"; };
 		6CEF1E111D1E81DF00C96031 /* SCOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCOnboardingViewController.m; sourceTree = "<group>"; };
 		6CEF1E131D1E836200C96031 /* OnboardingData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OnboardingData.plist; sourceTree = "<group>"; };
@@ -181,6 +214,8 @@
 				6CEF1E5B1D1EF50100C96031 /* SCInfoViewController.m */,
 				6CEF1E5D1D1EF79F00C96031 /* SCBookmarksTableViewController.h */,
 				6CEF1E5E1D1EF79F00C96031 /* SCBookmarksTableViewController.m */,
+				6CDDBEFE1D1F34EF00BB7D6F /* SCInfoTableViewController.h */,
+				6CDDBEFF1D1F34EF00BB7D6F /* SCInfoTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -217,13 +252,35 @@
 		6CB393C21D1DE0690048F815 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6CDDBEE31D1F2B1200BB7D6F /* Wishlist images */,
+				6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */,
 				6CEF1E3D1D1EEC4C00C96031 /* Fonts */,
 				6CEF1E371D1EDD3C00C96031 /* beach2.jpg */,
 				6CEF1E381D1EDD3C00C96031 /* beach3.jpg */,
 				6CEF1E391D1EDD3C00C96031 /* beach4.jpg */,
 				6CB393B21D1DE0230048F815 /* Assets.xcassets */,
+				6CDDBEE01D1F1F3700BB7D6F /* SpareChange-Bridging-Header.h */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		6CDDBEE31D1F2B1200BB7D6F /* Wishlist images */ = {
+			isa = PBXGroup;
+			children = (
+				6CDDBEE41D1F2B1200BB7D6F /* Deodorant.jpg */,
+				6CDDBEE51D1F2B1200BB7D6F /* Razor.jpg */,
+				6CDDBEE61D1F2B1200BB7D6F /* Sanitary Pad.jpg */,
+				6CDDBEE71D1F2B1200BB7D6F /* Shampoo.jpg */,
+				6CDDBEE81D1F2B1200BB7D6F /* Shaving Foam.jpg */,
+				6CDDBEE91D1F2B1200BB7D6F /* Soap.png */,
+				6CDDBEEA1D1F2B1200BB7D6F /* Socks.jpg */,
+				6CDDBEEB1D1F2B1200BB7D6F /* Toothbrush.jpg */,
+				6CDDBEED1D1F2B1200BB7D6F /* Toothpaste.jpg */,
+				6CDDBEEE1D1F2B1200BB7D6F /* Underwear.jpg */,
+				6CDDBEEF1D1F2B1200BB7D6F /* underwear2.png */,
+				6CDDBEF01D1F2B1200BB7D6F /* underwear3.jpg */,
+			);
+			path = "Wishlist images";
 			sourceTree = "<group>";
 		};
 		6CEF1E1A1D1E885600C96031 /* Categories */ = {
@@ -246,6 +303,8 @@
 			children = (
 				6CEF1E311D1EAD0F00C96031 /* SCAccountTableViewCell.h */,
 				6CEF1E321D1EAD0F00C96031 /* SCAccountTableViewCell.m */,
+				6CDDBEDD1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.h */,
+				6CDDBEDE1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -346,17 +405,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDDBEFA1D1F2B1200BB7D6F /* Toothpaste.jpg in Resources */,
+				6CDDBEFC1D1F2B1200BB7D6F /* underwear2.png in Resources */,
+				6CDDBEF61D1F2B1200BB7D6F /* Soap.png in Resources */,
 				6CEF1E3C1D1EDD3C00C96031 /* beach4.jpg in Resources */,
+				6CDDBEF41D1F2B1200BB7D6F /* Shampoo.jpg in Resources */,
+				6CDDBEF11D1F2B1200BB7D6F /* Deodorant.jpg in Resources */,
 				6CEF1E3B1D1EDD3C00C96031 /* beach3.jpg in Resources */,
 				6CEF1E531D1EEC6900C96031 /* SourceSansPro-Regular.otf in Resources */,
 				6CEF1E4F1D1EEC6900C96031 /* SourceSansPro-It.otf in Resources */,
 				6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */,
+				6CDDBEF71D1F2B1200BB7D6F /* Socks.jpg in Resources */,
 				6CEF1E4A1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf in Resources */,
 				6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */,
+				6CDDBEFD1D1F2B1200BB7D6F /* underwear3.jpg in Resources */,
 				6CEF1E521D1EEC6900C96031 /* SourceSansPro-LightIt.otf in Resources */,
 				6CEF1E191D1E879E00C96031 /* Onboarding.storyboard in Resources */,
 				6CEF1E4E1D1EEC6900C96031 /* SourceSansPro-Black.otf in Resources */,
+				6CDDBEF81D1F2B1200BB7D6F /* Toothbrush.jpg in Resources */,
 				6CEF1E4D1D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				6CDDBEF21D1F2B1200BB7D6F /* Razor.jpg in Resources */,
+				6CDDBEF51D1F2B1200BB7D6F /* Shaving Foam.jpg in Resources */,
+				6CDDBEFB1D1F2B1200BB7D6F /* Underwear.jpg in Resources */,
 				6CB393B31D1DE0230048F815 /* Assets.xcassets in Resources */,
 				6CEF1E511D1EEC6900C96031 /* SourceSansPro-Light.otf in Resources */,
 				6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */,
@@ -364,6 +434,7 @@
 				6CEF1E3A1D1EDD3C00C96031 /* beach2.jpg in Resources */,
 				6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */,
 				6CEF1E541D1EEC6900C96031 /* SourceSansPro-Semibold.otf in Resources */,
+				6CDDBEF31D1F2B1200BB7D6F /* Sanitary Pad.jpg in Resources */,
 				6CEF1E4C1D1EEC6900C96031 /* SourceSansPro-BlackIt.otf in Resources */,
 				6CEF1E551D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf in Resources */,
 			);
@@ -429,14 +500,17 @@
 				6CEF1E2F1D1EA27C00C96031 /* SCTabBarController.m in Sources */,
 				6CEF1E121D1E81DF00C96031 /* SCOnboardingViewController.m in Sources */,
 				6CEF1E5C1D1EF50100C96031 /* SCInfoViewController.m in Sources */,
+				6CDDBF001D1F34EF00BB7D6F /* SCInfoTableViewController.m in Sources */,
 				6CB393AB1D1DE0230048F815 /* AppDelegate.m in Sources */,
 				6CEF1E261D1E91B200C96031 /* SCAccountTableViewController.m in Sources */,
 				6CEF1E581D1EEDD600C96031 /* UINavigationController+Ibiza.m in Sources */,
 				6CEF1E231D1E8B5B00C96031 /* SCLoginViewController.m in Sources */,
 				6CB393A81D1DE0230048F815 /* main.m in Sources */,
+				6CDDBEE21D1F1F3800BB7D6F /* SpareChangeAPI.swift in Sources */,
 				6CEF1E331D1EAD0F00C96031 /* SCAccountTableViewCell.m in Sources */,
 				6CEF1E201D1E88BC00C96031 /* Constants.m in Sources */,
 				6CEF1E291D1E9EBF00C96031 /* UIFont+SC.m in Sources */,
+				6CDDBEDF1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m in Sources */,
 				6CEF1E5F1D1EF79F00C96031 /* SCBookmarksTableViewController.m in Sources */,
 				6CEF1E361D1EB5D200C96031 /* SCDonateViewController.m in Sources */,
 			);
@@ -551,10 +625,13 @@
 			baseConfigurationReference = 747DB263111CA19C3A694D00 /* Pods-SpareChange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SpareChange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SpareChange.SpareChange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpareChange/SpareChange-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -563,10 +640,12 @@
 			baseConfigurationReference = 41636D71B02BFF93A63A448A /* Pods-SpareChange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SpareChange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SpareChange.SpareChange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpareChange/SpareChange-Bridging-Header.h";
 			};
 			name = Release;
 		};

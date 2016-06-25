@@ -13,9 +13,12 @@
 #import <FontAwesomeIconFactory/NIKFontAwesomeIconFactory.h>
 #import <FontAwesomeIconFactory/NIKFontAwesomeIconFactory+iOS.h>
 #import <Slash/Slash.h>
+#import "SCInfoViewController.h"
+#import "SpareChange-swift.h"
+#import "UINavigationController+Ibiza.h"
+#import "NSUserDefaults+SC.h"
 
 @interface SCDonateViewController () {
-    NSMutableArray *arrayColour;
     NSMutableArray *searchArray;
     NSString *searchTextString;
     BOOL isFilter;
@@ -24,6 +27,9 @@
     UIView *viewTextBox;
     UILabel *labelTextBoxText;
     UIButton *buttonDonate;
+    NSDictionary *userSelected;
+    SpareChangeAPI *api;
+    NSArray *data;
 }
 
 @end
@@ -33,7 +39,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[self navigationController] setNavigationBarHidden:YES];
     [[self navigationController] setClear:YES];
+    
+    api = [[SpareChangeAPI alloc] init];
+    
+    data = [api homeless];
     
     [self showDonateScreen];
     
@@ -41,10 +52,16 @@
     [factory setColors:@[[UIColor lightGrayColor]]];
     
     isFilter = NO;
-    arrayColour = [NSMutableArray arrayWithObjects:@"Red",@"Green",@"Blue",@"Gray",@"Black",@"White",@"Yellow",@"Brown",@"Pink",nil];
+    //arrayColour = [NSMutableArray arrayWithObjects:@"Red",@"Green",@"Blue",@"Gray",@"Black",@"White",@"Yellow",@"Brown",@"Pink",nil];
     [[self imageViewSearch] setImage:[factory createImageForIcon:NIKFontAwesomeIconSearch]];
     [[self textFieldSearch] setDelegate:self];
     [[self textFieldSearch] addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[self navigationController] setNavigationBarHidden:YES];
+    [[self navigationController] setClear:YES];
 }
 
 - (void)showDonateScreen {
@@ -89,12 +106,7 @@
     [UIView animateWithDuration:1.0 animations:^{
         [viewBackground setCenter:CGPointMake([viewBackground frame].size.width/2, 1500)];
     } completion:^(BOOL finished) {
-        [viewBackground setHidden:YES];
-        viewBackground = nil;
-        [viewBackground setHidden:YES];
-        viewBackground = nil;
-        [viewBackground setHidden:YES];
-        viewBackground = nil;
+        [NSUserDefaults setHasWelcomeMessageDisplayed:YES];
     }];
 }
 
@@ -107,7 +119,7 @@
         return [searchArray count];
     }
     
-    return [arrayColour count];
+    return [data count];
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -123,19 +135,22 @@
     if(isFilter) {
         [[cell textLabel] setText:[searchArray objectAtIndex:[indexPath row]]];
     } else {
-        [[cell textLabel] setText:[arrayColour objectAtIndex:[indexPath row]]];
+        [[cell textLabel] setText:[[data objectAtIndex:[indexPath row]] valueForKey:@"handle"]];
     }
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    userSelected = [data objectAtIndex:[indexPath row]];
+    [[self textFieldSearch] resignFirstResponder];
     [self performSegueWithIdentifier:@"toInfoSegue" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"toInfoSegue"]) {
-        
+        SCInfoViewController *destinationViewController = (SCInfoViewController *)[segue destinationViewController];
+        [destinationViewController setPerson:userSelected];
     }
 }
 
@@ -153,10 +168,11 @@
         [self displayButtonVisible:YES];
         isFilter = YES;
         searchArray = [[NSMutableArray alloc] init];
-        for(NSString *string in arrayColour) {
-            NSRange stringRange = [string rangeOfString:searchText options:NSCaseInsensitiveSearch];
+        for(NSDictionary *person in data) {
+            NSString *username = [person valueForKey:@"handle"];
+            NSRange stringRange = [username rangeOfString:searchText options:NSCaseInsensitiveSearch];
             if(stringRange.location != NSNotFound){
-                [searchArray addObject:string];
+                [searchArray addObject:username];
             }
         }
     }

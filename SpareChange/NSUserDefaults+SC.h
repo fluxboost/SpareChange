@@ -12,7 +12,14 @@
 
 + (BOOL)isUserLoggedIn;
 + (BOOL)isOnboardingCompleted;
++ (BOOL)hasWelcomeMessageDisplayed;
+
++ (void)setHasWelcomeMessageDisplayed:(BOOL)hasDisplayed;
 + (void)setIsUserLoggedIn:(BOOL)isLoggedIn;
 + (void)setIsOnboardingComplete:(BOOL)isOnboardingComplete;
+
++ (void)removePersonFromBookmarks:(NSDictionary *)person;
++ (NSArray *)bookmarks;
++ (void)addPersonToBookmarks:(NSDictionary *)person;
 
 @end
