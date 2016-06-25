@@ -1,0 +1,22 @@
+PODS:
+  - EAIntroView (2.9.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+  - FontAwesomeIconFactory (2.1.1)
+  - JTSImageViewController (1.5.1)
+  - MBProgressHUD (0.9.2)
+
+DEPENDENCIES:
+  - EAIntroView (~> 2.9.0)
+  - FontAwesomeIconFactory
+  - JTSImageViewController
+  - MBProgressHUD (~> 0.9.2)
+
+SPEC CHECKSUMS:
+  EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  FontAwesomeIconFactory: bb9ce26d3dd13044854a82d380023c8e7d3ebf1a
+  JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+
+COCOAPODS: 0.39.0

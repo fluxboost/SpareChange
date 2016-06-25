@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSUserDefaults+SC.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self setupAppearance];
+    
+    if ([NSUserDefaults isUserLoggedIn]) {
+        [[self window] setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController]];
+    } else {
+        [[self window] setRootViewController:[[UIStoryboard storyboardWithName:@"Onboarding" bundle:[NSBundle mainBundle]] instantiateInitialViewController]];
+    }
+    
     return YES;
 }
 
@@ -40,6 +49,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setupAppearance {
+    //UIImage *backButtonIcon = [self imageWithImage:[UIImage imageNamed:@"backArrow.png"] scaledToSize:CGSizeMake(36, 36)];
+    //[[UINavigationBar appearance] setBackIndicatorImage:[backButtonIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
+    //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[backButtonIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor], NSBackgroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont systemFontOfSize:16.0f]}];
+    //[[UINavigationBar appearance] setClipsToBounds:YES];
+    
+    // Hides back button text
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor yellowColor]];
+    [[UITabBar appearance] setTranslucent:NO];
+    [[UITabBarItem appearance] setTitleTextAttributes: @{ NSFontAttributeName : [UIFont systemFontOfSize:9.0f]} forState:UIControlStateNormal];
 }
 
 @end
