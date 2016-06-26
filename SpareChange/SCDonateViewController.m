@@ -69,7 +69,7 @@
 - (void)showDonateScreen {
     CGRect frame = CGRectMake(0, -500, [[self view] frame].size.width, [[self view] frame].size.height);
     viewBackground = [[UIView alloc] initWithFrame:frame];
-    [viewBackground setBackgroundColor:[UIColor yellowColor]];
+    [viewBackground setBackgroundColor:[UIColor colorPrimary:1.0f]];
     CGRect baseFrame = [[self view] frame];
     
      viewTextBox = [[UIView alloc] initWithFrame:CGRectMake(baseFrame.size.width/2 - 100, baseFrame.size.height/2 - 100, 250, 300)];
@@ -80,6 +80,11 @@
     [labelTextBoxText setAttributedText:[SLSMarkupParser attributedStringWithMarkup:@"<strong>Hello and welcome to SpareChange!</strong>\nWe are incredibly grateful you've decided to join us in aiding the homeless community where others wouldn't. Using this app we hope to encourage people to donate safely to those in need. Are you ready?" style:[self markup] error:NULL]];
     [labelTextBoxText setTextColor:[UIColor whiteColor]];
     [labelTextBoxText sizeToFit];
+    
+    UIImageView *imageViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(32, 32, 100, 100)];
+    [imageViewIcon setImage:[UIImage imageNamed:@"SpareChange_Logo_Black"]];
+    [imageViewIcon setContentMode:UIViewContentModeScaleAspectFit];
+    [viewBackground addSubview:imageViewIcon];
     
     buttonDonate = [UIButton buttonWithType:UIButtonTypeCustom];
     [buttonDonate setFrame:CGRectMake(16, CGRectGetHeight([viewTextBox frame]) - 16 - 50, CGRectGetWidth([labelTextBoxText frame]), 50)];

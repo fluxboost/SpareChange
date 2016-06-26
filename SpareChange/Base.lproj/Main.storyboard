@@ -84,7 +84,7 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.70980392156862748" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="HdC-9Z-v4Y"/>
                                     <constraint firstAttribute="bottom" secondItem="PT8-rS-wmM" secondAttribute="bottom" constant="25" id="Lbm-or-odq"/>

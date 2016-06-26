@@ -47,6 +47,7 @@
     [headerView addSubview:labelSubheader];
     UIView *underline = [[UIView alloc] initWithFrame:CGRectMake(padding, CGRectGetMaxY([labelSubheader frame]) + padding, 100, 1)];
     [underline setBackgroundColor:[UIColor lightGrayColor]];
+    //[headerView setBackgroundColor:[UIColor colorPrimary:1.0f]];
     [headerView addSubview:underline];
     [[self tableView] setTableHeaderView:headerView];
 }

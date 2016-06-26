@@ -23,6 +23,8 @@
 		6C39EBAB1D1FD29D00C30B88 /* person13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBAA1D1FD29D00C30B88 /* person13.jpg */; };
 		6C39EBAD1D1FD31100C30B88 /* person14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBAC1D1FD31100C30B88 /* person14.jpg */; };
 		6C39EBAF1D1FD3C400C30B88 /* checkmarkIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBAE1D1FD3C400C30B88 /* checkmarkIcon.png */; };
+		6C39EBB11D1FD84D00C30B88 /* SpareChange_Logo_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBB01D1FD84D00C30B88 /* SpareChange_Logo_Black.png */; };
+		6C39EBB31D1FDA7B00C30B88 /* SpareChange_Logo_White.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBB21D1FDA7B00C30B88 /* SpareChange_Logo_White.png */; };
 		6CA0A94D1D1F45C400013CFE /* SCDonatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */; };
 		6CA0A9501D1F50EB00013CFE /* UIViewController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94F1D1F50EB00013CFE /* UIViewController+NavigationController.m */; };
 		6CA0A9551D1F616B00013CFE /* person1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9511D1F616B00013CFE /* person1.jpg */; };
@@ -88,6 +90,8 @@
 		6C39EBAA1D1FD29D00C30B88 /* person13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person13.jpg; sourceTree = "<group>"; };
 		6C39EBAC1D1FD31100C30B88 /* person14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person14.jpg; sourceTree = "<group>"; };
 		6C39EBAE1D1FD3C400C30B88 /* checkmarkIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmarkIcon.png; sourceTree = "<group>"; };
+		6C39EBB01D1FD84D00C30B88 /* SpareChange_Logo_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpareChange_Logo_Black.png; sourceTree = "<group>"; };
+		6C39EBB21D1FDA7B00C30B88 /* SpareChange_Logo_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpareChange_Logo_White.png; sourceTree = "<group>"; };
 		6CA0A94B1D1F45C400013CFE /* SCDonatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDonatedViewController.h; sourceTree = "<group>"; };
 		6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDonatedViewController.m; sourceTree = "<group>"; };
 		6CA0A94E1D1F50EB00013CFE /* UIViewController+NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationController.h"; sourceTree = "<group>"; };
@@ -313,6 +317,8 @@
 		6CB393C21D1DE0690048F815 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6C39EBB01D1FD84D00C30B88 /* SpareChange_Logo_Black.png */,
+				6C39EBB21D1FDA7B00C30B88 /* SpareChange_Logo_White.png */,
 				6CA0A9621D1FCA7D00013CFE /* Wishlist Images 2 */,
 				6CA0A9591D1F617000013CFE /* Onboarding */,
 				6CDDBEE31D1F2B1200BB7D6F /* Wishlist images */,
@@ -461,8 +467,10 @@
 				6C39EB9F1D1FCBE200C30B88 /* Soap.jpg in Resources */,
 				6CA0A9551D1F616B00013CFE /* person1.jpg in Resources */,
 				6CA0A9611D1F648C00013CFE /* person8.jpg in Resources */,
+				6C39EBB31D1FDA7B00C30B88 /* SpareChange_Logo_White.png in Resources */,
 				6C39EBA01D1FCBE200C30B88 /* Socks.jpg in Resources */,
 				6CEF1E531D1EEC6900C96031 /* SourceSansPro-Regular.otf in Resources */,
+				6C39EBB11D1FD84D00C30B88 /* SpareChange_Logo_Black.png in Resources */,
 				6CEF1E4F1D1EEC6900C96031 /* SourceSansPro-It.otf in Resources */,
 				6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */,
 				6CEF1E4A1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf in Resources */,
