@@ -240,7 +240,7 @@
         <!--Info Table View Controller-->
         <scene sceneID="v5s-SU-2jE">
             <objects>
-                <tableViewController id="LzU-Xe-RIS" customClass="SCInfoTableViewController" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="LzU-Xe-RIS" customClass="SCInfoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kPO-pa-mbT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -22,6 +22,7 @@
     
     [self setupAppearance];
     [NSUserDefaults setHasWelcomeMessageDisplayed:YES];
+    [NSUserDefaults setIsUserLoggedIn:NO];
     
     if ([NSUserDefaults isUserLoggedIn]) {
         [[self window] setRootViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController]];

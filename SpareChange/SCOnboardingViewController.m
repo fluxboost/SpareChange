@@ -60,7 +60,7 @@
     [[self intro] setPageControlY:100.0f];
     [[self intro] setUseMotionEffects:YES];
     [[self intro] setSwipeToExit:YES];
-    [[self intro] showInView:[self view] animateDuration:1.0];
+    [[self intro] showInView:[self view] animateDuration:0.0];
 }
 
 - (void)intro:(EAIntroView *)introView pageStartScrolling:(EAIntroPage *)page withIndex:(NSUInteger)pageIndex {

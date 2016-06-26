@@ -64,6 +64,7 @@
     [super viewDidAppear:animated];
     //[[self navigationController] setNavigationBarHidden:YES];
     [[self navigationController] setClear:YES];
+    [[[self tabBarController] tabBar] setHidden:NO];
 }
 
 - (void)showDonateScreen {
@@ -81,7 +82,7 @@
     [labelTextBoxText setTextColor:[UIColor whiteColor]];
     [labelTextBoxText sizeToFit];
     
-    UIImageView *imageViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(32, 32, 100, 100)];
+    UIImageView *imageViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(32, 32, 200, 200)];
     [imageViewIcon setImage:[UIImage imageNamed:@"SpareChange_Logo_Black"]];
     [imageViewIcon setContentMode:UIViewContentModeScaleAspectFit];
     [viewBackground addSubview:imageViewIcon];

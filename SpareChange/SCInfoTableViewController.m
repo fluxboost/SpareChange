@@ -111,6 +111,7 @@
 - (void)buttonDonatePressed {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Apple Pay" message:[NSString stringWithFormat:@"The price is £%.2f + 10%% transaction fee which goes back into funding SpareChange. Are you sure you wish to buy this item?", [[selectedItem valueForKey:@"price"] floatValue]] preferredStyle:UIAlertControllerStyleAlert];
+    [[alert view] setTintColor:[UIColor colorPrimary:1.0f]];
     [alert addAction:[UIAlertAction actionWithTitle:@"Pay" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         SCDonatedViewController *viewController = [SCDonatedViewController createWithUsername:[[self person] valueForKey:@"handle"] andProductName:[selectedItem valueForKey:@"name"]];
         [self presentViewController:[viewController withNavigationControllerWithOpaque] animated:YES completion:^{
