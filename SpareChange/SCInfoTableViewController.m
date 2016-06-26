@@ -102,7 +102,7 @@
     [button setFrame:CGRectMake(0, [[self view] frame].size.height - 50, [[self view] frame].size.width, 50.0f)];
     [button setBackgroundColor:[UIColor colorPrimary:1.0f]];
     [[button titleLabel] setFont:[UIFont fontSourceSansProBold:20.0f]];
-    [button setTitle:[NSString stringWithFormat:@"Donate %@ to %@", [selectedItem valueForKey:@"name"], [[self person] valueForKey:@"handle"]] forState:UIControlStateNormal];
+    [button setTitle:[NSString stringWithFormat:@"Donate %@ to %@", [[selectedItem valueForKey:@"name"] lowercaseString], [[self person] valueForKey:@"handle"]] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonDonatePressed) forControlEvents:UIControlEventTouchUpInside];
     return button;
@@ -110,10 +110,17 @@
 
 - (void)buttonDonatePressed {
     
-    SCDonatedViewController *viewController = [SCDonatedViewController createWithUsername:[[self person] valueForKey:@"handle"] andProductName:[selectedItem valueForKey:@"name"]];
-    [self presentViewController:[viewController withNavigationControllerWithOpaque] animated:YES completion:^{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Apple Pay" message:[NSString stringWithFormat:@"The price is £%.2f + 10%% transaction fee which goes back into funding SpareChange. Are you sure you wish to buy this item?", [[selectedItem valueForKey:@"price"] floatValue]] preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"Pay" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        SCDonatedViewController *viewController = [SCDonatedViewController createWithUsername:[[self person] valueForKey:@"handle"] andProductName:[selectedItem valueForKey:@"name"]];
+        [self presentViewController:[viewController withNavigationControllerWithOpaque] animated:YES completion:^{
+            [[self navigationController] popViewControllerAnimated:YES];
+        }];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
-    }];
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end

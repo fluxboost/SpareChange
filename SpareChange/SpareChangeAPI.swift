@@ -93,8 +93,15 @@ import Foundation
     private func generateWishListUsingShop() -> [Product] {
         var list = [Product]()
 
-        for _ in 1...5 {
-            list.append(shop.products[Int(arc4random_uniform(UInt32(shop.products.count - 1)) + 1)])
+//        for _ in 1...5 {
+//            list.append(shop.products[Int(arc4random_uniform(UInt32(shop.products.count - 1)) + 1)])
+//        }
+        
+        while list.count < 5 {
+            let product = shop.products[Int(arc4random_uniform(UInt32(shop.products.count - 1)) + 1)]
+            if !list.contains(product) {
+                list.append(product)
+            }
         }
 
         return list

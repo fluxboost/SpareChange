@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C39EB9A1D1FCBE200C30B88 /* Deodorant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB901D1FCBE200C30B88 /* Deodorant.jpg */; };
+		6C39EB9B1D1FCBE200C30B88 /* Razor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB911D1FCBE200C30B88 /* Razor.jpg */; };
+		6C39EB9C1D1FCBE200C30B88 /* Sanitary Pad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB921D1FCBE200C30B88 /* Sanitary Pad.jpg */; };
+		6C39EB9D1D1FCBE200C30B88 /* Shampoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB931D1FCBE200C30B88 /* Shampoo.jpg */; };
+		6C39EB9E1D1FCBE200C30B88 /* Shaving Foam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB941D1FCBE200C30B88 /* Shaving Foam.jpg */; };
+		6C39EB9F1D1FCBE200C30B88 /* Soap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB951D1FCBE200C30B88 /* Soap.jpg */; };
+		6C39EBA01D1FCBE200C30B88 /* Socks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB961D1FCBE200C30B88 /* Socks.jpg */; };
+		6C39EBA11D1FCBE200C30B88 /* Toothbrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB971D1FCBE200C30B88 /* Toothbrush.jpg */; };
+		6C39EBA21D1FCBE200C30B88 /* Toothpaste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB981D1FCBE200C30B88 /* Toothpaste.jpg */; };
+		6C39EBA31D1FCBE200C30B88 /* Underwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EB991D1FCBE200C30B88 /* Underwear.jpg */; };
+		6C39EBA51D1FD03F00C30B88 /* person10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBA41D1FD03F00C30B88 /* person10.jpg */; };
+		6C39EBA71D1FD0D400C30B88 /* person11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBA61D1FD0D400C30B88 /* person11.jpg */; };
+		6C39EBA91D1FD11800C30B88 /* person12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBA81D1FD11800C30B88 /* person12.jpg */; };
+		6C39EBAB1D1FD29D00C30B88 /* person13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBAA1D1FD29D00C30B88 /* person13.jpg */; };
+		6C39EBAD1D1FD31100C30B88 /* person14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBAC1D1FD31100C30B88 /* person14.jpg */; };
+		6C39EBAF1D1FD3C400C30B88 /* checkmarkIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C39EBAE1D1FD3C400C30B88 /* checkmarkIcon.png */; };
 		6CA0A94D1D1F45C400013CFE /* SCDonatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */; };
 		6CA0A9501D1F50EB00013CFE /* UIViewController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94F1D1F50EB00013CFE /* UIViewController+NavigationController.m */; };
 		6CA0A9551D1F616B00013CFE /* person1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9511D1F616B00013CFE /* person1.jpg */; };
 		6CA0A9561D1F616B00013CFE /* person2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9521D1F616B00013CFE /* person2.jpg */; };
 		6CA0A9571D1F616B00013CFE /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9531D1F616B00013CFE /* person3.jpg */; };
-		6CA0A9581D1F616B00013CFE /* person4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9541D1F616B00013CFE /* person4.jpg */; };
 		6CA0A95B1D1F61B700013CFE /* person5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A95A1D1F61B700013CFE /* person5.jpg */; };
 		6CA0A95D1D1F622300013CFE /* person6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A95C1D1F622300013CFE /* person6.jpg */; };
 		6CA0A95F1D1F63B200013CFE /* person7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A95E1D1F63B200013CFE /* person7.jpg */; };
@@ -24,18 +39,6 @@
 		6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393B41D1DE0230048F815 /* LaunchScreen.storyboard */; };
 		6CDDBEDF1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDBEDE1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m */; };
 		6CDDBEE21D1F1F3800BB7D6F /* SpareChangeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */; };
-		6CDDBEF11D1F2B1200BB7D6F /* Deodorant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE41D1F2B1200BB7D6F /* Deodorant.jpg */; };
-		6CDDBEF21D1F2B1200BB7D6F /* Razor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE51D1F2B1200BB7D6F /* Razor.jpg */; };
-		6CDDBEF31D1F2B1200BB7D6F /* Sanitary Pad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE61D1F2B1200BB7D6F /* Sanitary Pad.jpg */; };
-		6CDDBEF41D1F2B1200BB7D6F /* Shampoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE71D1F2B1200BB7D6F /* Shampoo.jpg */; };
-		6CDDBEF51D1F2B1200BB7D6F /* Shaving Foam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE81D1F2B1200BB7D6F /* Shaving Foam.jpg */; };
-		6CDDBEF61D1F2B1200BB7D6F /* Soap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEE91D1F2B1200BB7D6F /* Soap.png */; };
-		6CDDBEF71D1F2B1200BB7D6F /* Socks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEA1D1F2B1200BB7D6F /* Socks.jpg */; };
-		6CDDBEF81D1F2B1200BB7D6F /* Toothbrush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEB1D1F2B1200BB7D6F /* Toothbrush.jpg */; };
-		6CDDBEFA1D1F2B1200BB7D6F /* Toothpaste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEED1D1F2B1200BB7D6F /* Toothpaste.jpg */; };
-		6CDDBEFB1D1F2B1200BB7D6F /* Underwear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEE1D1F2B1200BB7D6F /* Underwear.jpg */; };
-		6CDDBEFC1D1F2B1200BB7D6F /* underwear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEEF1D1F2B1200BB7D6F /* underwear2.png */; };
-		6CDDBEFD1D1F2B1200BB7D6F /* underwear3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDBEF01D1F2B1200BB7D6F /* underwear3.jpg */; };
 		6CDDBF001D1F34EF00BB7D6F /* SCInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDBEFF1D1F34EF00BB7D6F /* SCInfoTableViewController.m */; };
 		6CEF1E121D1E81DF00C96031 /* SCOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E111D1E81DF00C96031 /* SCOnboardingViewController.m */; };
 		6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E131D1E836200C96031 /* OnboardingData.plist */; };
@@ -49,9 +52,6 @@
 		6CEF1E2F1D1EA27C00C96031 /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E2E1D1EA27C00C96031 /* SCTabBarController.m */; };
 		6CEF1E331D1EAD0F00C96031 /* SCAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E321D1EAD0F00C96031 /* SCAccountTableViewCell.m */; };
 		6CEF1E361D1EB5D200C96031 /* SCDonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF1E351D1EB5D200C96031 /* SCDonateViewController.m */; };
-		6CEF1E3A1D1EDD3C00C96031 /* beach2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E371D1EDD3C00C96031 /* beach2.jpg */; };
-		6CEF1E3B1D1EDD3C00C96031 /* beach3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E381D1EDD3C00C96031 /* beach3.jpg */; };
-		6CEF1E3C1D1EDD3C00C96031 /* beach4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E391D1EDD3C00C96031 /* beach4.jpg */; };
 		6CEF1E4A1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E3E1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf */; };
 		6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E3F1D1EEC6900C96031 /* SourceSansPro-Bold.otf */; };
 		6CEF1E4C1D1EEC6900C96031 /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF1E401D1EEC6900C96031 /* SourceSansPro-BlackIt.otf */; };
@@ -72,6 +72,22 @@
 
 /* Begin PBXFileReference section */
 		41636D71B02BFF93A63A448A /* Pods-SpareChange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareChange.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpareChange/Pods-SpareChange.release.xcconfig"; sourceTree = "<group>"; };
+		6C39EB901D1FCBE200C30B88 /* Deodorant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Deodorant.jpg; sourceTree = "<group>"; };
+		6C39EB911D1FCBE200C30B88 /* Razor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Razor.jpg; sourceTree = "<group>"; };
+		6C39EB921D1FCBE200C30B88 /* Sanitary Pad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sanitary Pad.jpg"; sourceTree = "<group>"; };
+		6C39EB931D1FCBE200C30B88 /* Shampoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shampoo.jpg; sourceTree = "<group>"; };
+		6C39EB941D1FCBE200C30B88 /* Shaving Foam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shaving Foam.jpg"; sourceTree = "<group>"; };
+		6C39EB951D1FCBE200C30B88 /* Soap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soap.jpg; sourceTree = "<group>"; };
+		6C39EB961D1FCBE200C30B88 /* Socks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Socks.jpg; sourceTree = "<group>"; };
+		6C39EB971D1FCBE200C30B88 /* Toothbrush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toothbrush.jpg; sourceTree = "<group>"; };
+		6C39EB981D1FCBE200C30B88 /* Toothpaste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toothpaste.jpg; sourceTree = "<group>"; };
+		6C39EB991D1FCBE200C30B88 /* Underwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Underwear.jpg; sourceTree = "<group>"; };
+		6C39EBA41D1FD03F00C30B88 /* person10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person10.jpg; sourceTree = "<group>"; };
+		6C39EBA61D1FD0D400C30B88 /* person11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person11.jpg; sourceTree = "<group>"; };
+		6C39EBA81D1FD11800C30B88 /* person12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person12.jpg; sourceTree = "<group>"; };
+		6C39EBAA1D1FD29D00C30B88 /* person13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person13.jpg; sourceTree = "<group>"; };
+		6C39EBAC1D1FD31100C30B88 /* person14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person14.jpg; sourceTree = "<group>"; };
+		6C39EBAE1D1FD3C400C30B88 /* checkmarkIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmarkIcon.png; sourceTree = "<group>"; };
 		6CA0A94B1D1F45C400013CFE /* SCDonatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDonatedViewController.h; sourceTree = "<group>"; };
 		6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDonatedViewController.m; sourceTree = "<group>"; };
 		6CA0A94E1D1F50EB00013CFE /* UIViewController+NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationController.h"; sourceTree = "<group>"; };
@@ -79,7 +95,6 @@
 		6CA0A9511D1F616B00013CFE /* person1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpg; sourceTree = "<group>"; };
 		6CA0A9521D1F616B00013CFE /* person2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpg; sourceTree = "<group>"; };
 		6CA0A9531D1F616B00013CFE /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
-		6CA0A9541D1F616B00013CFE /* person4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpg; sourceTree = "<group>"; };
 		6CA0A95A1D1F61B700013CFE /* person5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person5.jpg; sourceTree = "<group>"; };
 		6CA0A95C1D1F622300013CFE /* person6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person6.jpg; sourceTree = "<group>"; };
 		6CA0A95E1D1F63B200013CFE /* person7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person7.jpg; sourceTree = "<group>"; };
@@ -96,18 +111,6 @@
 		6CDDBEDE1D1F1EA400BB7D6F /* SCWishListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWishListCollectionViewCell.m; sourceTree = "<group>"; };
 		6CDDBEE01D1F1F3700BB7D6F /* SpareChange-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpareChange-Bridging-Header.h"; sourceTree = "<group>"; };
 		6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpareChangeAPI.swift; sourceTree = "<group>"; };
-		6CDDBEE41D1F2B1200BB7D6F /* Deodorant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Deodorant.jpg; sourceTree = "<group>"; };
-		6CDDBEE51D1F2B1200BB7D6F /* Razor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Razor.jpg; sourceTree = "<group>"; };
-		6CDDBEE61D1F2B1200BB7D6F /* Sanitary Pad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sanitary Pad.jpg"; sourceTree = "<group>"; };
-		6CDDBEE71D1F2B1200BB7D6F /* Shampoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shampoo.jpg; sourceTree = "<group>"; };
-		6CDDBEE81D1F2B1200BB7D6F /* Shaving Foam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shaving Foam.jpg"; sourceTree = "<group>"; };
-		6CDDBEE91D1F2B1200BB7D6F /* Soap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soap.png; sourceTree = "<group>"; };
-		6CDDBEEA1D1F2B1200BB7D6F /* Socks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Socks.jpg; sourceTree = "<group>"; };
-		6CDDBEEB1D1F2B1200BB7D6F /* Toothbrush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toothbrush.jpg; sourceTree = "<group>"; };
-		6CDDBEED1D1F2B1200BB7D6F /* Toothpaste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Toothpaste.jpg; sourceTree = "<group>"; };
-		6CDDBEEE1D1F2B1200BB7D6F /* Underwear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Underwear.jpg; sourceTree = "<group>"; };
-		6CDDBEEF1D1F2B1200BB7D6F /* underwear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underwear2.png; sourceTree = "<group>"; };
-		6CDDBEF01D1F2B1200BB7D6F /* underwear3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = underwear3.jpg; sourceTree = "<group>"; };
 		6CDDBEFE1D1F34EF00BB7D6F /* SCInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInfoTableViewController.h; sourceTree = "<group>"; };
 		6CDDBEFF1D1F34EF00BB7D6F /* SCInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfoTableViewController.m; sourceTree = "<group>"; };
 		6CEF1E101D1E81DF00C96031 /* SCOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCOnboardingViewController.h; sourceTree = "<group>"; };
@@ -132,9 +135,6 @@
 		6CEF1E321D1EAD0F00C96031 /* SCAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAccountTableViewCell.m; sourceTree = "<group>"; };
 		6CEF1E341D1EB5D200C96031 /* SCDonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDonateViewController.h; sourceTree = "<group>"; };
 		6CEF1E351D1EB5D200C96031 /* SCDonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDonateViewController.m; sourceTree = "<group>"; };
-		6CEF1E371D1EDD3C00C96031 /* beach2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach2.jpg; sourceTree = "<group>"; };
-		6CEF1E381D1EDD3C00C96031 /* beach3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach3.jpg; sourceTree = "<group>"; };
-		6CEF1E391D1EDD3C00C96031 /* beach4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach4.jpg; sourceTree = "<group>"; };
 		6CEF1E3E1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
 		6CEF1E3F1D1EEC6900C96031 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
 		6CEF1E401D1EEC6900C96031 /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
@@ -175,13 +175,35 @@
 				6CA0A95A1D1F61B700013CFE /* person5.jpg */,
 				6CA0A9601D1F648C00013CFE /* person8.jpg */,
 				6CA0A95E1D1F63B200013CFE /* person7.jpg */,
+				6C39EBAC1D1FD31100C30B88 /* person14.jpg */,
+				6C39EBA61D1FD0D400C30B88 /* person11.jpg */,
 				6CA0A9511D1F616B00013CFE /* person1.jpg */,
+				6C39EBAA1D1FD29D00C30B88 /* person13.jpg */,
 				6CA0A95C1D1F622300013CFE /* person6.jpg */,
 				6CA0A9521D1F616B00013CFE /* person2.jpg */,
 				6CA0A9531D1F616B00013CFE /* person3.jpg */,
-				6CA0A9541D1F616B00013CFE /* person4.jpg */,
+				6C39EBA81D1FD11800C30B88 /* person12.jpg */,
+				6C39EBA41D1FD03F00C30B88 /* person10.jpg */,
+				6C39EBAE1D1FD3C400C30B88 /* checkmarkIcon.png */,
 			);
 			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		6CA0A9621D1FCA7D00013CFE /* Wishlist Images 2 */ = {
+			isa = PBXGroup;
+			children = (
+				6C39EB901D1FCBE200C30B88 /* Deodorant.jpg */,
+				6C39EB911D1FCBE200C30B88 /* Razor.jpg */,
+				6C39EB921D1FCBE200C30B88 /* Sanitary Pad.jpg */,
+				6C39EB931D1FCBE200C30B88 /* Shampoo.jpg */,
+				6C39EB941D1FCBE200C30B88 /* Shaving Foam.jpg */,
+				6C39EB951D1FCBE200C30B88 /* Soap.jpg */,
+				6C39EB961D1FCBE200C30B88 /* Socks.jpg */,
+				6C39EB971D1FCBE200C30B88 /* Toothbrush.jpg */,
+				6C39EB981D1FCBE200C30B88 /* Toothpaste.jpg */,
+				6C39EB991D1FCBE200C30B88 /* Underwear.jpg */,
+			);
+			name = "Wishlist Images 2";
 			sourceTree = "<group>";
 		};
 		6CB3939A1D1DE0230048F815 = {
@@ -291,13 +313,11 @@
 		6CB393C21D1DE0690048F815 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6CA0A9621D1FCA7D00013CFE /* Wishlist Images 2 */,
 				6CA0A9591D1F617000013CFE /* Onboarding */,
 				6CDDBEE31D1F2B1200BB7D6F /* Wishlist images */,
 				6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */,
 				6CEF1E3D1D1EEC4C00C96031 /* Fonts */,
-				6CEF1E371D1EDD3C00C96031 /* beach2.jpg */,
-				6CEF1E381D1EDD3C00C96031 /* beach3.jpg */,
-				6CEF1E391D1EDD3C00C96031 /* beach4.jpg */,
 				6CB393B21D1DE0230048F815 /* Assets.xcassets */,
 				6CDDBEE01D1F1F3700BB7D6F /* SpareChange-Bridging-Header.h */,
 			);
@@ -307,18 +327,6 @@
 		6CDDBEE31D1F2B1200BB7D6F /* Wishlist images */ = {
 			isa = PBXGroup;
 			children = (
-				6CDDBEE41D1F2B1200BB7D6F /* Deodorant.jpg */,
-				6CDDBEE51D1F2B1200BB7D6F /* Razor.jpg */,
-				6CDDBEE61D1F2B1200BB7D6F /* Sanitary Pad.jpg */,
-				6CDDBEE71D1F2B1200BB7D6F /* Shampoo.jpg */,
-				6CDDBEE81D1F2B1200BB7D6F /* Shaving Foam.jpg */,
-				6CDDBEE91D1F2B1200BB7D6F /* Soap.png */,
-				6CDDBEEA1D1F2B1200BB7D6F /* Socks.jpg */,
-				6CDDBEEB1D1F2B1200BB7D6F /* Toothbrush.jpg */,
-				6CDDBEED1D1F2B1200BB7D6F /* Toothpaste.jpg */,
-				6CDDBEEE1D1F2B1200BB7D6F /* Underwear.jpg */,
-				6CDDBEEF1D1F2B1200BB7D6F /* underwear2.png */,
-				6CDDBEF01D1F2B1200BB7D6F /* underwear3.jpg */,
 			);
 			path = "Wishlist images";
 			sourceTree = "<group>";
@@ -447,46 +455,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CDDBEFA1D1F2B1200BB7D6F /* Toothpaste.jpg in Resources */,
-				6CDDBEFC1D1F2B1200BB7D6F /* underwear2.png in Resources */,
-				6CDDBEF61D1F2B1200BB7D6F /* Soap.png in Resources */,
-				6CEF1E3C1D1EDD3C00C96031 /* beach4.jpg in Resources */,
-				6CDDBEF41D1F2B1200BB7D6F /* Shampoo.jpg in Resources */,
+				6C39EBA51D1FD03F00C30B88 /* person10.jpg in Resources */,
 				6CA0A95D1D1F622300013CFE /* person6.jpg in Resources */,
 				6CA0A9561D1F616B00013CFE /* person2.jpg in Resources */,
-				6CDDBEF11D1F2B1200BB7D6F /* Deodorant.jpg in Resources */,
+				6C39EB9F1D1FCBE200C30B88 /* Soap.jpg in Resources */,
 				6CA0A9551D1F616B00013CFE /* person1.jpg in Resources */,
 				6CA0A9611D1F648C00013CFE /* person8.jpg in Resources */,
-				6CEF1E3B1D1EDD3C00C96031 /* beach3.jpg in Resources */,
-				6CA0A9581D1F616B00013CFE /* person4.jpg in Resources */,
+				6C39EBA01D1FCBE200C30B88 /* Socks.jpg in Resources */,
 				6CEF1E531D1EEC6900C96031 /* SourceSansPro-Regular.otf in Resources */,
 				6CEF1E4F1D1EEC6900C96031 /* SourceSansPro-It.otf in Resources */,
 				6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */,
-				6CDDBEF71D1F2B1200BB7D6F /* Socks.jpg in Resources */,
 				6CEF1E4A1D1EEC6900C96031 /* SourceSansPro-ExtraLight.otf in Resources */,
 				6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */,
-				6CDDBEFD1D1F2B1200BB7D6F /* underwear3.jpg in Resources */,
 				6CEF1E521D1EEC6900C96031 /* SourceSansPro-LightIt.otf in Resources */,
+				6C39EBA21D1FCBE200C30B88 /* Toothpaste.jpg in Resources */,
 				6CA0A95B1D1F61B700013CFE /* person5.jpg in Resources */,
 				6CEF1E191D1E879E00C96031 /* Onboarding.storyboard in Resources */,
+				6C39EBAD1D1FD31100C30B88 /* person14.jpg in Resources */,
 				6CEF1E4E1D1EEC6900C96031 /* SourceSansPro-Black.otf in Resources */,
-				6CDDBEF81D1F2B1200BB7D6F /* Toothbrush.jpg in Resources */,
+				6C39EBA11D1FCBE200C30B88 /* Toothbrush.jpg in Resources */,
 				6CEF1E4D1D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf in Resources */,
 				6CA0A95F1D1F63B200013CFE /* person7.jpg in Resources */,
-				6CDDBEF21D1F2B1200BB7D6F /* Razor.jpg in Resources */,
-				6CDDBEF51D1F2B1200BB7D6F /* Shaving Foam.jpg in Resources */,
-				6CDDBEFB1D1F2B1200BB7D6F /* Underwear.jpg in Resources */,
 				6CB393B31D1DE0230048F815 /* Assets.xcassets in Resources */,
 				6CEF1E511D1EEC6900C96031 /* SourceSansPro-Light.otf in Resources */,
 				6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */,
 				6CEF1E501D1EEC6900C96031 /* SourceSansPro-BoldIt.otf in Resources */,
-				6CEF1E3A1D1EDD3C00C96031 /* beach2.jpg in Resources */,
 				6CA0A9571D1F616B00013CFE /* person3.jpg in Resources */,
+				6C39EB9B1D1FCBE200C30B88 /* Razor.jpg in Resources */,
+				6C39EB9D1D1FCBE200C30B88 /* Shampoo.jpg in Resources */,
+				6C39EBA91D1FD11800C30B88 /* person12.jpg in Resources */,
+				6C39EBAB1D1FD29D00C30B88 /* person13.jpg in Resources */,
+				6C39EB9E1D1FCBE200C30B88 /* Shaving Foam.jpg in Resources */,
+				6C39EBA71D1FD0D400C30B88 /* person11.jpg in Resources */,
 				6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */,
 				6CEF1E541D1EEC6900C96031 /* SourceSansPro-Semibold.otf in Resources */,
-				6CDDBEF31D1F2B1200BB7D6F /* Sanitary Pad.jpg in Resources */,
+				6C39EB9A1D1FCBE200C30B88 /* Deodorant.jpg in Resources */,
+				6C39EB9C1D1FCBE200C30B88 /* Sanitary Pad.jpg in Resources */,
 				6CEF1E4C1D1EEC6900C96031 /* SourceSansPro-BlackIt.otf in Resources */,
 				6CEF1E551D1EEC6900C96031 /* SourceSansPro-SemiboldIt.otf in Resources */,
+				6C39EBAF1D1FD3C400C30B88 /* checkmarkIcon.png in Resources */,
+				6C39EBA31D1FCBE200C30B88 /* Underwear.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

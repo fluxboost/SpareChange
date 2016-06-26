@@ -14,7 +14,7 @@
 		<key>titleText</key>
 		<string>Step 1</string>
 		<key>descText</key>
-		<string>Ask a homeless person for their username.</string>
+		<string>Ask a homeless person for their username and enter it.</string>
 		<key>image</key>
 		<string>person2.jpg</string>
 	</dict>
@@ -40,7 +40,7 @@
 		<key>descText</key>
 		<string>They can now visit their local shelter later to pick up their item.</string>
 		<key>image</key>
-		<string>person5.jpg</string>
+		<string>person14.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>

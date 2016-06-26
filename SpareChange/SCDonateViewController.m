@@ -17,6 +17,7 @@
 #import "SpareChange-swift.h"
 #import "UINavigationController+Ibiza.h"
 #import "NSUserDefaults+SC.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface SCDonateViewController () {
     NSMutableArray *searchArray;
@@ -30,6 +31,7 @@
     NSDictionary *userSelected;
     SpareChangeAPI *api;
     NSArray *data;
+    MBProgressHUD *hud;
 }
 
 @end
@@ -129,13 +131,17 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"donateCell"];
     }
     
-    [[cell textLabel] setFont:[UIFont fontSourceSansProLight:18.0f]];
+    [[cell textLabel] setFont:[UIFont fontSourceSansProBold:18.0f]];
+    [[cell detailTextLabel] setFont:[UIFont fontSourceSansProLight:14.0f]];
     [[cell textLabel] setTextColor:[UIColor darkGrayColor]];
+    [[cell detailTextLabel] setTextColor:[UIColor darkGrayColor]];
     
     if(isFilter) {
-        [[cell textLabel] setText:[searchArray objectAtIndex:[indexPath row]]];
+        [[cell textLabel] setText:[[searchArray objectAtIndex:[indexPath row]] valueForKey:@"handle"]];
+        [[cell detailTextLabel] setText:[[searchArray objectAtIndex:[indexPath row]] valueForKey:@"location"]];
     } else {
         [[cell textLabel] setText:[[data objectAtIndex:[indexPath row]] valueForKey:@"handle"]];
+        [[cell detailTextLabel] setText:[[data objectAtIndex:[indexPath row]] valueForKey:@"location"]];
     }
     
     return cell;
@@ -187,7 +193,7 @@
             NSString *username = [person valueForKey:@"handle"];
             NSRange stringRange = [username rangeOfString:searchText options:NSCaseInsensitiveSearch];
             if(stringRange.location != NSNotFound){
-                [searchArray addObject:username];
+                [searchArray addObject:person];
             }
         }
     }
