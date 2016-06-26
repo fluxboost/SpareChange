@@ -10,6 +10,12 @@
 
 @interface SCDonatedViewController : UIViewController
 
-+ (instancetype)create;
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *productName;
+@property (weak, nonatomic) IBOutlet UILabel *labelSubHeader;
+@property (weak, nonatomic) IBOutlet UILabel *labelHeader;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewDonated;
+
++ (instancetype)createWithUsername:(NSString *)username andProductName:(NSString *)productName;
 
 @end

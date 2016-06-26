@@ -43,7 +43,7 @@
     [labelHeader setText:@"Account"];
     [headerView addSubview:labelHeader];
     UILabel *labelSubheader = [[UILabel alloc] initWithFrame:CGRectMake(padding, CGRectGetMaxY([labelHeader frame]), [[self view] frame].size.width - (padding*2), 30)];
-    [labelSubheader setFont:[UIFont fontSourceSansProLight:14.0f]];
+    [labelSubheader setFont:[UIFont fontSourceSansProLight:16.0f]];
     [labelSubheader setTextColor:[UIColor lightGrayColor]];
     [labelSubheader setText:@"View and edit profile"];
     [headerView addSubview:labelSubheader];
@@ -57,7 +57,7 @@
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"accountCell" forIndexPath:indexPath];
     
     if ([indexPath row] == 0) {
-        [[cell textLabel] setText:@"Username"];
+        [[cell textLabel] setText:@"User"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[factory createImageForIcon:NIKFontAwesomeIconUser]];
         [cell setAccessoryView:imageView];
     } else if ([indexPath row] == 1) {

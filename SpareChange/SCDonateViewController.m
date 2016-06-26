@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[self navigationController] setNavigationBarHidden:YES];
+    //[[self navigationController] setNavigationBarHidden:YES];
     [[self navigationController] setClear:YES];
     
     api = [[SpareChangeAPI alloc] init];
@@ -60,7 +60,7 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[self navigationController] setNavigationBarHidden:YES];
+    //[[self navigationController] setNavigationBarHidden:YES];
     [[self navigationController] setClear:YES];
 }
 
@@ -142,7 +142,22 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    userSelected = [data objectAtIndex:[indexPath row]];
+    
+    if (isFilter) {
+        userSelected = [searchArray objectAtIndex:[indexPath row]];
+    } else {
+        userSelected = [data objectAtIndex:[indexPath row]];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (![userSelected valueForKey:@"wishList"]) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Info" message:@"Unfortunately this person doesn't have a wishlist set at the moment, please check back later." preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alert animated:YES completion:nil];
+        [[self textFieldSearch] resignFirstResponder];
+        return;
+    }
+    
     [[self textFieldSearch] resignFirstResponder];
     [self performSegueWithIdentifier:@"toInfoSegue" sender:self];
 }

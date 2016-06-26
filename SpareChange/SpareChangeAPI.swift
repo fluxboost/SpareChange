@@ -139,6 +139,7 @@ import Foundation
 @objc public class Product: NSObject {
     let name: String
     let price: NSDecimalNumber
+    let isSelected:NSNumber = 0
 
     public init(name: String, price: NSDecimalNumber) {
         self.name  = name

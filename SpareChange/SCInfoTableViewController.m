@@ -13,10 +13,14 @@
 #import <FontAwesomeIconFactory/NIKFontAwesomeIconFactory.h>
 #import <FontAwesomeIconFactory/NIKFontAwesomeIconFactory+iOS.h>
 #import "UIColor+SC.h"
+#import "UIFont+SC.h"
+#import "SCDonatedViewController.h"
+#import "UIViewController+NavigationController.h"
 
 @interface SCInfoTableViewController () {
     NSArray *wishListItems;
     NIKFontAwesomeIconFactory *factory;
+    NSDictionary *selectedItem;
 }
 @end
 
@@ -24,6 +28,7 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
     factory = [NIKFontAwesomeIconFactory barButtonItemIconFactory];
     [factory setColors:@[[UIColor colorPrimary:1.0f]]];
     wishListItems = [[self person] valueForKeyPath:@"wishList.items"];
@@ -44,7 +49,7 @@
 }
 
 - (void)bookmarkPerson {
-    [NSUserDefaults addPersonToBookmarks:[self person]];
+    //[NSUserDefaults addPersonToBookmarks:[self person]];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -78,7 +83,37 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    //SCWishListCollectionViewCell *cell = (SCWishListCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     
+    //NSMutableDictionary *wishlistItem = [[wishListItems objectAtIndex:[indexPath row]] mutableCopy];
+    //[wishlistItem setObject:[NSNumber numberWithBool:YES] forKey:@"isSelected"];
+    
+    selectedItem = [wishListItems objectAtIndex:[indexPath row]];
+    [self showDonateButton];
+    NSLog(@"%ld tapped", (long)[indexPath row]);
+}
+
+- (void)showDonateButton {
+    [[self view] addSubview:[self buttonDonate]];
+}
+
+- (UIButton *)buttonDonate {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(0, [[self view] frame].size.height - 50, [[self view] frame].size.width, 50.0f)];
+    [button setBackgroundColor:[UIColor colorPrimary:1.0f]];
+    [[button titleLabel] setFont:[UIFont fontSourceSansProBold:20.0f]];
+    [button setTitle:[NSString stringWithFormat:@"Donate %@ to %@", [selectedItem valueForKey:@"name"], [[self person] valueForKey:@"handle"]] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonDonatePressed) forControlEvents:UIControlEventTouchUpInside];
+    return button;
+}
+
+- (void)buttonDonatePressed {
+    
+    SCDonatedViewController *viewController = [SCDonatedViewController createWithUsername:[[self person] valueForKey:@"handle"] andProductName:[selectedItem valueForKey:@"name"]];
+    [self presentViewController:[viewController withNavigationControllerWithOpaque] animated:YES completion:^{
+        
+    }];
 }
 
 @end

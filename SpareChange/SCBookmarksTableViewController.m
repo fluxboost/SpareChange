@@ -13,11 +13,19 @@
 #import "UINavigationController+Ibiza.h"
 #import "NSUserDefaults+SC.h"
 
+@interface  SCBookmarksTableViewController () {
+    NSArray *data;
+}
+
+@end
+
 @implementation SCBookmarksTableViewController
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    [self setPeople:[NSUserDefaults bookmarks]];
+    //[self setPeople:[NSUserDefaults bookmarks]];
+    
+    data = @[@"red.scarf", @"king.panda"];
     [[self navigationController] setClear:YES];
     [self setupTableViewHeader];
     [[self tableView] setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
@@ -33,7 +41,7 @@
     [labelHeader setText:@"Bookmarks"];
     [headerView addSubview:labelHeader];
     UILabel *labelSubheader = [[UILabel alloc] initWithFrame:CGRectMake(padding, CGRectGetMaxY([labelHeader frame]), [[self view] frame].size.width - (padding*2), 30)];
-    [labelSubheader setFont:[UIFont fontSourceSansProLight:14.0f]];
+    [labelSubheader setFont:[UIFont fontSourceSansProLight:16.0f]];
     [labelSubheader setTextColor:[UIColor lightGrayColor]];
     [labelSubheader setText:@"View the people you donate to regularly"];
     [headerView addSubview:labelSubheader];
@@ -52,14 +60,14 @@
     
     [[cell textLabel] setFont:[UIFont fontSourceSansProLight:18.0f]];
     [[cell textLabel] setTextColor:[UIColor darkGrayColor]];
-    
-    [[cell textLabel] setText:[[[self people] objectAtIndex:[indexPath row]] valueForKey:@"handle"]];
+    [[cell textLabel] setText:[data objectAtIndex:[indexPath row]]];
+    [[cell detailTextLabel] setText:@""];
     
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[self people] count];
+    return [data count];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

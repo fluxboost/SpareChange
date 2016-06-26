@@ -4,43 +4,51 @@
 <array>
 	<dict>
 		<key>titleText</key>
-		<string>Welcome</string>
+		<string>SpareChange</string>
 		<key>descText</key>
-		<string>Buy e-tickets to the events you love.</string>
+		<string>Give change to make change. Swipe to continue.</string>
 		<key>image</key>
-		<string>beach4.jpg</string>
+		<string>person1.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
-		<string>Discover</string>
+		<string>Step 1</string>
 		<key>descText</key>
-		<string>Find the best events happening in your area.</string>
+		<string>Ask a homeless person for their username.</string>
 		<key>image</key>
-		<string>beach2.jpg</string>
+		<string>person2.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
-		<string>Buy</string>
+		<string>Step 2</string>
 		<key>descText</key>
-		<string>Purchase your tickets within the app and receive your unique e-ticket.</string>
+		<string>Pick an item from their wishlist.</string>
 		<key>image</key>
-		<string>beach3.jpg</string>
+		<string>person3.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
-		<string>Scan</string>
+		<string>Step 3</string>
 		<key>descText</key>
-		<string>Arrive at the venue and get your QR code ticket scanned on the door.</string>
+		<string>Pay for the item.</string>
 		<key>image</key>
-		<string>beach4.jpg</string>
+		<string>person8.jpg</string>
 	</dict>
 	<dict>
 		<key>titleText</key>
-		<string>Live it, feel it, sense it.</string>
+		<string>Done!</string>
 		<key>descText</key>
-		<string>That&apos;s all there is to it, it just makes sense.</string>
+		<string>They can now visit their local shelter later to pick up their item.</string>
 		<key>image</key>
-		<string>beach2.jpg</string>
+		<string>person5.jpg</string>
+	</dict>
+	<dict>
+		<key>titleText</key>
+		<string>Donating Made Personal</string>
+		<key>descText</key>
+		<string>SpareChange helps the homeless get the products they really need.</string>
+		<key>image</key>
+		<string>person7.jpg</string>
 	</dict>
 </array>
 </plist>

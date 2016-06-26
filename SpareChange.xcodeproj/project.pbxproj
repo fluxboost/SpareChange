@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6CA0A94D1D1F45C400013CFE /* SCDonatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */; };
+		6CA0A9501D1F50EB00013CFE /* UIViewController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA0A94F1D1F50EB00013CFE /* UIViewController+NavigationController.m */; };
+		6CA0A9551D1F616B00013CFE /* person1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9511D1F616B00013CFE /* person1.jpg */; };
+		6CA0A9561D1F616B00013CFE /* person2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9521D1F616B00013CFE /* person2.jpg */; };
+		6CA0A9571D1F616B00013CFE /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9531D1F616B00013CFE /* person3.jpg */; };
+		6CA0A9581D1F616B00013CFE /* person4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9541D1F616B00013CFE /* person4.jpg */; };
+		6CA0A95B1D1F61B700013CFE /* person5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A95A1D1F61B700013CFE /* person5.jpg */; };
+		6CA0A95D1D1F622300013CFE /* person6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A95C1D1F622300013CFE /* person6.jpg */; };
+		6CA0A95F1D1F63B200013CFE /* person7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A95E1D1F63B200013CFE /* person7.jpg */; };
+		6CA0A9611D1F648C00013CFE /* person8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CA0A9601D1F648C00013CFE /* person8.jpg */; };
 		6CB393A81D1DE0230048F815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393A71D1DE0230048F815 /* main.m */; };
 		6CB393AB1D1DE0230048F815 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393AA1D1DE0230048F815 /* AppDelegate.m */; };
 		6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB393AF1D1DE0230048F815 /* Main.storyboard */; };
@@ -65,6 +74,16 @@
 		41636D71B02BFF93A63A448A /* Pods-SpareChange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareChange.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpareChange/Pods-SpareChange.release.xcconfig"; sourceTree = "<group>"; };
 		6CA0A94B1D1F45C400013CFE /* SCDonatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDonatedViewController.h; sourceTree = "<group>"; };
 		6CA0A94C1D1F45C400013CFE /* SCDonatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDonatedViewController.m; sourceTree = "<group>"; };
+		6CA0A94E1D1F50EB00013CFE /* UIViewController+NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationController.h"; sourceTree = "<group>"; };
+		6CA0A94F1D1F50EB00013CFE /* UIViewController+NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationController.m"; sourceTree = "<group>"; };
+		6CA0A9511D1F616B00013CFE /* person1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpg; sourceTree = "<group>"; };
+		6CA0A9521D1F616B00013CFE /* person2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpg; sourceTree = "<group>"; };
+		6CA0A9531D1F616B00013CFE /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
+		6CA0A9541D1F616B00013CFE /* person4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpg; sourceTree = "<group>"; };
+		6CA0A95A1D1F61B700013CFE /* person5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person5.jpg; sourceTree = "<group>"; };
+		6CA0A95C1D1F622300013CFE /* person6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person6.jpg; sourceTree = "<group>"; };
+		6CA0A95E1D1F63B200013CFE /* person7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person7.jpg; sourceTree = "<group>"; };
+		6CA0A9601D1F648C00013CFE /* person8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person8.jpg; sourceTree = "<group>"; };
 		6CB393A31D1DE0230048F815 /* SpareChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpareChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB393A71D1DE0230048F815 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CB393A91D1DE0230048F815 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +169,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CA0A9591D1F617000013CFE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6CA0A95A1D1F61B700013CFE /* person5.jpg */,
+				6CA0A9601D1F648C00013CFE /* person8.jpg */,
+				6CA0A95E1D1F63B200013CFE /* person7.jpg */,
+				6CA0A9511D1F616B00013CFE /* person1.jpg */,
+				6CA0A95C1D1F622300013CFE /* person6.jpg */,
+				6CA0A9521D1F616B00013CFE /* person2.jpg */,
+				6CA0A9531D1F616B00013CFE /* person3.jpg */,
+				6CA0A9541D1F616B00013CFE /* person4.jpg */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
 		6CB3939A1D1DE0230048F815 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +291,7 @@
 		6CB393C21D1DE0690048F815 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6CA0A9591D1F617000013CFE /* Onboarding */,
 				6CDDBEE31D1F2B1200BB7D6F /* Wishlist images */,
 				6CDDBEE11D1F1F3800BB7D6F /* SpareChangeAPI.swift */,
 				6CEF1E3D1D1EEC4C00C96031 /* Fonts */,
@@ -291,6 +326,8 @@
 		6CEF1E1A1D1E885600C96031 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				6CA0A94E1D1F50EB00013CFE /* UIViewController+NavigationController.h */,
+				6CA0A94F1D1F50EB00013CFE /* UIViewController+NavigationController.m */,
 				6CEF1E561D1EEDD600C96031 /* UINavigationController+Ibiza.h */,
 				6CEF1E571D1EEDD600C96031 /* UINavigationController+Ibiza.m */,
 				6CEF1E271D1E9EBF00C96031 /* UIFont+SC.h */,
@@ -415,8 +452,13 @@
 				6CDDBEF61D1F2B1200BB7D6F /* Soap.png in Resources */,
 				6CEF1E3C1D1EDD3C00C96031 /* beach4.jpg in Resources */,
 				6CDDBEF41D1F2B1200BB7D6F /* Shampoo.jpg in Resources */,
+				6CA0A95D1D1F622300013CFE /* person6.jpg in Resources */,
+				6CA0A9561D1F616B00013CFE /* person2.jpg in Resources */,
 				6CDDBEF11D1F2B1200BB7D6F /* Deodorant.jpg in Resources */,
+				6CA0A9551D1F616B00013CFE /* person1.jpg in Resources */,
+				6CA0A9611D1F648C00013CFE /* person8.jpg in Resources */,
 				6CEF1E3B1D1EDD3C00C96031 /* beach3.jpg in Resources */,
+				6CA0A9581D1F616B00013CFE /* person4.jpg in Resources */,
 				6CEF1E531D1EEC6900C96031 /* SourceSansPro-Regular.otf in Resources */,
 				6CEF1E4F1D1EEC6900C96031 /* SourceSansPro-It.otf in Resources */,
 				6CEF1E4B1D1EEC6900C96031 /* SourceSansPro-Bold.otf in Resources */,
@@ -425,10 +467,12 @@
 				6CB393B61D1DE0230048F815 /* LaunchScreen.storyboard in Resources */,
 				6CDDBEFD1D1F2B1200BB7D6F /* underwear3.jpg in Resources */,
 				6CEF1E521D1EEC6900C96031 /* SourceSansPro-LightIt.otf in Resources */,
+				6CA0A95B1D1F61B700013CFE /* person5.jpg in Resources */,
 				6CEF1E191D1E879E00C96031 /* Onboarding.storyboard in Resources */,
 				6CEF1E4E1D1EEC6900C96031 /* SourceSansPro-Black.otf in Resources */,
 				6CDDBEF81D1F2B1200BB7D6F /* Toothbrush.jpg in Resources */,
 				6CEF1E4D1D1EEC6900C96031 /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				6CA0A95F1D1F63B200013CFE /* person7.jpg in Resources */,
 				6CDDBEF21D1F2B1200BB7D6F /* Razor.jpg in Resources */,
 				6CDDBEF51D1F2B1200BB7D6F /* Shaving Foam.jpg in Resources */,
 				6CDDBEFB1D1F2B1200BB7D6F /* Underwear.jpg in Resources */,
@@ -437,6 +481,7 @@
 				6CB393B11D1DE0230048F815 /* Main.storyboard in Resources */,
 				6CEF1E501D1EEC6900C96031 /* SourceSansPro-BoldIt.otf in Resources */,
 				6CEF1E3A1D1EDD3C00C96031 /* beach2.jpg in Resources */,
+				6CA0A9571D1F616B00013CFE /* person3.jpg in Resources */,
 				6CEF1E141D1E836200C96031 /* OnboardingData.plist in Resources */,
 				6CEF1E541D1EEC6900C96031 /* SourceSansPro-Semibold.otf in Resources */,
 				6CDDBEF31D1F2B1200BB7D6F /* Sanitary Pad.jpg in Resources */,
@@ -502,6 +547,7 @@
 			files = (
 				6CEF1E1D1D1E887100C96031 /* NSUserDefaults+SC.m in Sources */,
 				6CEF1E2C1D1E9ECC00C96031 /* UIColor+SC.m in Sources */,
+				6CA0A9501D1F50EB00013CFE /* UIViewController+NavigationController.m in Sources */,
 				6CEF1E2F1D1EA27C00C96031 /* SCTabBarController.m in Sources */,
 				6CEF1E121D1E81DF00C96031 /* SCOnboardingViewController.m in Sources */,
 				6CEF1E5C1D1EF50100C96031 /* SCInfoViewController.m in Sources */,

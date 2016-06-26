@@ -40,27 +40,26 @@
     for (NSDictionary *object in onboardingData) {
         EAIntroPage *page = [EAIntroPage page];
         page.title = [object objectForKey:@"titleText"];
-        page.titleFont = [UIFont fontSourceSansProBold:24.0f];
-        //page.titleFont = [UIFont pik_avenirNextBoldWithSize:18.0f];
+        page.titleFont = [UIFont fontSourceSansProBold:30.0f];
         page.titleColor = [UIColor whiteColor];
-        page.titlePositionY = 175.0f;
+        page.titlePositionY = 220.0f;
         page.desc = [object objectForKey:@"descText"];
-        page.descFont = [UIFont fontSourceSansProLight:18.0f];
+        page.descFont = [UIFont fontSourceSansProLight:24.0f];
         page.descColor = [UIColor whiteColor];
-        //page.descFont = [UIFont pik_avenirNextRegWithSize:14.0f];
-        page.descPositionY = 175.0f;
+        page.descPositionY = 220.0f;
         page.bgImage = [UIImage imageNamed:[object objectForKey:@"image"]];
         [pages addObject:page];
     }
     
     [self setIntro:[[EAIntroView alloc] initWithFrame:[[self view] bounds] andPages:pages]];
     [[self intro] setDelegate:self];
-    [[self intro] setSkipButton:[self skipButton]];
-    [[self intro] setSkipButtonAlignment:EAViewAlignmentCenter];
-    [[self intro] setShowSkipButtonOnlyOnLastPage:YES];
+    //[[self intro] setSkipButton:[self skipButton]];
+    [[self intro] setSkipButton:nil];
+    //[[self intro] setSkipButtonAlignment:EAViewAlignmentCenter];
+    //[[self intro] setShowSkipButtonOnlyOnLastPage:YES];
     [[self intro] setPageControlY:100.0f];
     [[self intro] setUseMotionEffects:YES];
-    [[self intro] setSwipeToExit:NO];
+    [[self intro] setSwipeToExit:YES];
     [[self intro] showInView:[self view] animateDuration:1.0];
 }
 
