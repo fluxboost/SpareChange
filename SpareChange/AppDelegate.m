@@ -22,6 +22,7 @@
     
     [self setupAppearance];
     [NSUserDefaults setHasWelcomeMessageDisplayed:YES];
+    [NSUserDefaults setIsOnboardingComplete:NO];
     [NSUserDefaults setIsUserLoggedIn:NO];
     
     if ([NSUserDefaults isUserLoggedIn]) {
